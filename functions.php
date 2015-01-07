@@ -1,0 +1,9 @@
+<?php
+	include(TEMPLATEPATH.'/lib/utilities.php');
+	include(TEMPLATEPATH.'/lib/excerpt-prefs.php');
+	include(TEMPLATEPATH.'/lib/theme-features.php');
+	include(TEMPLATEPATH.'/lib/theme-filters.php');
+	include(TEMPLATEPATH.'/lib/theme-functions.php');
+	include(TEMPLATEPATH.'/lib/styles.php');
+	include(TEMPLATEPATH.'/lib/scripts.php');
+	include(TEMPLATEPATH.'/lib/dequeuing.php');
