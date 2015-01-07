@@ -1,0 +1,12 @@
+@mixin column {
+	@include box-sizing(border-box);
+	float: left;
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

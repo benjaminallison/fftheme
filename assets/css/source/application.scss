@@ -1,0 +1,24 @@
+// LIBRARIES AND MIXINGS
+@import "compass";
+@import "partials/helpers.scss";
+
+// BASE DECLARATIONS
+@import "partials/_base.scss";
+
+//BROWSER RESETS
+@import "partials/reset.scss";
+
+// FONTS
+@import "partials/icomoon.scss";
+
+// DEFAULT HTML ELEMENTS STYLES
+@import "partials/elements.scss";
+
+// WORDPRESS CLASSES
+@import "partials/wordpress-classes.scss";
+
+// GENERIC CLASSES
+@import "partials/generic-classes.scss";
+
+// COLUMN CLASSES
+@import "partials/grid.scss";
