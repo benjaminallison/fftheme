@@ -15,3 +15,21 @@
 .no-margin {
 	padding: 0!important;
 }
+
+.button {
+	@include box-sizing(border-box);
+	display: block;
+	background: #392c1e;
+	font-size: 1em;
+	color: #fff;
+	height: 2em;
+	line-height: 1em;
+	padding: 1em;
+	text-align: center;
+	@include transition(0.5s);
+}
+
+.button:hover {
+	color: #fff;
+	background: #737b35;
+}

@@ -7,87 +7,95 @@ canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section, summary, time, mark, audio, video {
   background: transparent;
   border: 0;
-  font-size: 100%;
-  font-weight: normal;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   margin: 0;
   outline: 0;
   padding: 0;
   vertical-align: baseline;
+  text-align: inherit;
 }
 
-/* line 17, ../source/partials/_reset.scss */
+/* line 20, ../source/partials/_reset.scss */
 *, *:before, *:after {
   -moz-box-sizing: inherit;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/* line 21, ../source/partials/_reset.scss */
+/* line 24, ../source/partials/_reset.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 25, ../source/partials/_reset.scss */
+/* line 28, ../source/partials/_reset.scss */
 body {
   font-size: 16px;
   line-height: 1;
 }
 
-/* line 30, ../source/partials/_reset.scss */
+/* line 33, ../source/partials/_reset.scss */
 a {
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  font-size: inherit;
   vertical-align: baseline;
   background: transparent;
 }
 
-/* line 38, ../source/partials/_reset.scss */
+/* line 41, ../source/partials/_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted #000;
   cursor: help;
 }
 
-/* line 43, ../source/partials/_reset.scss */
+/* line 46, ../source/partials/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 47, ../source/partials/_reset.scss */
+/* line 50, ../source/partials/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 51, ../source/partials/_reset.scss */
+/* line 54, ../source/partials/_reset.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: none;
 }
 
-/* line 55, ../source/partials/_reset.scss */
+/* line 58, ../source/partials/_reset.scss */
 button, input, select, textarea {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   margin: 0;
   width: auto;
 }
 
-/* line 62, ../source/partials/_reset.scss */
+/* line 65, ../source/partials/_reset.scss */
 button, input[type=button], input[type=submit] {
   overflow: visible;
   -webkit-appearance: none;
 }
 
-/* line 67, ../source/partials/_reset.scss */
+/* line 70, ../source/partials/_reset.scss */
 button, label, input[type=button], input[type=submit], input[type=file] {
   cursor: pointer;
 }
 
-/* line 71, ../source/partials/_reset.scss */
+/* line 74, ../source/partials/_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 75, ../source/partials/_reset.scss */
+/* line 78, ../source/partials/_reset.scss */
+em {
+  font-style: italic;
+}
+
+/* line 82, ../source/partials/_reset.scss */
 hr {
   border: 0;
   border-top: 1px solid #ccc;
@@ -97,40 +105,40 @@ hr {
   padding: 0;
 }
 
-/* line 84, ../source/partials/_reset.scss */
+/* line 91, ../source/partials/_reset.scss */
 img {
   display: block;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 89, ../source/partials/_reset.scss */
+/* line 96, ../source/partials/_reset.scss */
 img, object, embed {
   max-width: 100%;
 }
 
-/* line 93, ../source/partials/_reset.scss */
+/* line 100, ../source/partials/_reset.scss */
 input, select {
   vertical-align: middle;
 }
 
-/* line 97, ../source/partials/_reset.scss */
+/* line 104, ../source/partials/_reset.scss */
 input[type="radio"] {
   vertical-align: text-bottom;
 }
 
-/* line 101, ../source/partials/_reset.scss */
+/* line 108, ../source/partials/_reset.scss */
 input[type="checkbox"] {
   vertical-align: bottom;
 }
 
-/* line 105, ../source/partials/_reset.scss */
+/* line 112, ../source/partials/_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 111, ../source/partials/_reset.scss */
+/* line 118, ../source/partials/_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -138,51 +146,51 @@ mark {
   font-weight: bold;
 }
 
-/* line 118, ../source/partials/_reset.scss */
+/* line 125, ../source/partials/_reset.scss */
 pre, code, kbd, samp {
   font-family: monospace, sans-serif;
 }
 
-/* line 122, ../source/partials/_reset.scss */
+/* line 129, ../source/partials/_reset.scss */
 small {
   font-size: 85%;
 }
 
-/* line 126, ../source/partials/_reset.scss */
+/* line 133, ../source/partials/_reset.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 130, ../source/partials/_reset.scss */
+/* line 137, ../source/partials/_reset.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
 }
 
-/* line 136, ../source/partials/_reset.scss */
+/* line 143, ../source/partials/_reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 140, ../source/partials/_reset.scss */
+/* line 147, ../source/partials/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 144, ../source/partials/_reset.scss */
+/* line 151, ../source/partials/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 100%;
+  font-size: inherit;
 }
 
-/* line 150, ../source/partials/_reset.scss */
+/* line 157, ../source/partials/_reset.scss */
 td {
   vertical-align: top;
 }
 
-/* line 154, ../source/partials/_reset.scss */
+/* line 161, ../source/partials/_reset.scss */
 ul {
   list-style: none;
 }
@@ -194,28 +202,64 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
-/* body {
-	color: $primary-color;
-	font: 100% $font-stack;
+/* line 33, ../source/partials/_elements.scss */
+a {
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
+/* line 37, ../source/partials/_elements.scss */
+a:hover {
+  color: #fff;
+  background: #737b35;
+}
 
-	li {
-		display: inline-block;
-	}
+/* line 46, ../source/partials/_elements.scss */
+input, textarea {
+  background: #eae4e0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+  display: block;
+  height: 3em;
+  line-height: 1em;
+  padding: 1em;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
-	a {
-		display: block;
-		padding: 6px 12px;
-		text-decoration: none;
-	}
-} */
+/* line 57, ../source/partials/_elements.scss */
+input:focus, textarea:focus {
+  color: #fff;
+  background: #aa860b;
+}
+
+/* line 61, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input:-moz-placeholder {
+  color: #666;
+  font-style: italic;
+}
+/* line 64, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input::-moz-placeholder {
+  color: #666;
+  font-style: italic;
+}
+/* line 67, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input:-ms-input-placeholder {
+  color: #666;
+  font-style: italic;
+}
+/* line 56, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+input::-webkit-input-placeholder {
+  color: #666;
+  font-style: italic;
+}
+
 /* line 1, ../source/partials/_wordpress-classes.scss */
 .aligncenter {
   display: block;
@@ -251,6 +295,31 @@ nav {
 /* line 15, ../source/partials/_generic-classes.scss */
 .no-margin {
   padding: 0 !important;
+}
+
+/* line 19, ../source/partials/_generic-classes.scss */
+.button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background: #392c1e;
+  font-size: 1em;
+  color: #fff;
+  height: 2em;
+  line-height: 1em;
+  padding: 1em;
+  text-align: center;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 32, ../source/partials/_generic-classes.scss */
+.button:hover {
+  color: #fff;
+  background: #737b35;
 }
 
 /* line 1, ../source/partials/_grid.scss */
@@ -393,4 +462,21 @@ nav {
   box-sizing: border-box;
   float: left;
   width: 8.333%;
+}
+
+/* line 2, ../source/partials/_navigation.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 8, ../source/partials/_navigation.scss */
+nav li {
+  display: inline-block;
+}
+/* line 12, ../source/partials/_navigation.scss */
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
 }

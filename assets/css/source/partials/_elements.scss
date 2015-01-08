@@ -1,23 +1,67 @@
-
-/* body {
-	color: $primary-color;
-	font: 100% $font-stack;
+body {
+	
 }
 
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
+h1 {
 
-	li {
-		display: inline-block;
-	}
+}
 
-	a {
-		display: block;
-		padding: 6px 12px;
-		text-decoration: none;
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+a {
+	@include transition(0.5s);
+}
+
+a:hover {
+	color: #fff;
+	background: #737b35;
+}
+
+hr {
+
+}
+
+input, textarea {
+	background: #eae4e0;
+	@include box-sizing(border-box);
+	font-size: 1em;
+	display: block;
+	height: 3em;
+	line-height: 1em;
+	padding: 1em;
+	@include transition(0.5s);
+}
+
+input:focus, textarea:focus {
+	color: #fff;
+	background: #aa860b;
+}
+
+input {
+	@include input-placeholder {
+		color: #666;
+		font-style: italic;
 	}
-} */
+}

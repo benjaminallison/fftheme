@@ -3,7 +3,7 @@
 @import "partials/helpers.scss";
 
 // BASE DECLARATIONS
-@import "partials/_base.scss";
+@import "partials/base.scss";
 
 //BROWSER RESETS
 @import "partials/reset.scss";
@@ -22,3 +22,15 @@
 
 // COLUMN CLASSES
 @import "partials/grid.scss";
+
+// NAVIGATION
+@import "partials/_navigation.scss";
+
+// TYPOGRAPHY
+// @import "partials/typography.scss";
+
+// TYPOGRAPHY
+// @import "partials/typography.scss";
+
+// MEDIA QUERIES
+// @import "partials/_media-queries.scss";
