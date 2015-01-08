@@ -56,6 +56,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 button, input, select, textarea {
+	@include box-sizing(border-box);
+	display: block;
 	font-family: inherit;
 	font-size: inherit;
 	margin: 0;
@@ -64,7 +66,7 @@ button, input, select, textarea {
 
 button, input[type=button], input[type=submit] {
 	overflow: visible;
-	-webkit-appearance:none;
+	-webkit-appearance: none;
 }
 
 button, label, input[type=button], input[type=submit], input[type=file] {

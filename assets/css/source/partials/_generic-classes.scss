@@ -74,18 +74,15 @@
 	@include box-sizing(border-box);
 	display: block;
 	background: #392c1e;
-	font-size: 1em;
 	color: #fff;
-	height: 2em;
-	line-height: 1em;
 	padding: 1em;
 	text-align: center;
 	@include transition(0.5s);
 }
 
 .button:hover {
-	color: #fff;
-	background: #737b35;
+	background: #fff;
+	color: #737b35;
 }
 
 // PROPORTIONAL DIVS
@@ -106,13 +103,13 @@
 }
 
 .proportional-inner.four-by-three {
-	padding: 75% 0 0 0;
+	padding-top: 75%;
 }
 
 .proportional-inner.three-by-two {
-	padding: 66.666% 0 0 0;
+	padding-top: 66.666%;
 }
 
 .proportional-inner.sixteen-by-nine {
-	padding: 56.25% 0 0 0;
+	padding-top: 56.25%;
 }

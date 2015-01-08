@@ -3,27 +3,33 @@ body {
 }
 
 h1 {
-
+	font-size: 2em;
+	font-weight: bold;
 }
 
 h2 {
-
+	font-size: 1.75em;
+	font-weight: bold;
 }
 
 h3 {
-
+	font-size: 1.25em;
+	font-weight: bold;
 }
 
 h4 {
-
+	font-size: 1em;
+	font-weight: bold;
 }
 
 h5 {
-
+	font-size: 1em;
+	font-weight: italic;
 }
 
 h6 {
-
+	font-size: 0.875em;
+	font-weight: bold;
 }
 
 p {
@@ -44,12 +50,7 @@ hr {
 }
 
 input, textarea {
-	background: #eae4e0;
-	@include box-sizing(border-box);
-	font-size: 1em;
-	display: block;
-	height: 3em;
-	line-height: 1em;
+	background: #eee;
 	padding: 1em;
 	@include transition(0.5s);
 }

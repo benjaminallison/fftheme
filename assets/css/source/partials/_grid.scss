@@ -1,6 +1,10 @@
-.gutter-pad {
+%gutters {
 	padding-left: $halfGutter;
 	padding-right: $halfGutter;
+}
+
+.gutter-pad {
+	@extend %gutters;
 }
 
 .section-block {
@@ -10,8 +14,7 @@
 .container {
 	@include clearfix;
 	margin: 0 auto;
-	padding-left: $halfGutter;
-	padding-right: $halfGutter;
+	@extend %gutters;
 	width: $pageWidth;
 }
 

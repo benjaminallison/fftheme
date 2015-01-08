@@ -10,3 +10,14 @@
 		clear: both;
 	}
 }
+
+// send image and quote in opposite directions!
+@mixin pull-quote($direction) {
+	$opposite: opposite-position($direction);
+	border-#{$opposite}: 6px solid hotpink;
+	float: $direction;
+	margin: 0 0 .5em 0;
+	margin-#{$opposite}: 1em;
+	padding-#{$opposite}: 1em;
+	text-align: $opposite;
+}
