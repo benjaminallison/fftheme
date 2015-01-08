@@ -1,6 +1,6 @@
 // VARIABLES
-$pageWidth: "75em"; // default page width: 1200px (/16px, = 75em)
-$gutter: "1em";
+$pageWidth: 75em; // default page width: 1200px (/16px, = 75em)
+$gutter: 1em;
 $halfGutter: $gutter / 2;
 
 // Font weights
@@ -11,5 +11,5 @@ $bold: 600;
 $base-font-family: "Helvetica", "Arial", "sans serif";
 $base-font-family: "Helvetica", "Arial", "sans serif";
 $base-font-weight: $regular;
-$base-font-size: "1em";
+$base-font-size: 1em;
 $base-line-height: 1.5;

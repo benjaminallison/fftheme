@@ -23,14 +23,17 @@
 // COLUMN CLASSES
 @import "partials/grid.scss";
 
-// NAVIGATION
-@import "partials/navigation.scss";
-
-// TYPOGRAPHY
-@import "partials/typography.scss";
-
 // MODULES
-@import "partials/modules.scss";
+@import "partials/modules/header.scss";
+@import "partials/modules/main-content.scss";
+@import "partials/modules/carousel.scss";
+@import "partials/modules/accordion.scss";
+@import "partials/modules/wines.scss";
+@import "partials/modules/reviews.scss";
+@import "partials/modules/recipes.scss";
+@import "partials/modules/video.scss";
+@import "partials/modules/sidebar.scss";
+@import "partials/modules/footer.scss";
 
 // MEDIA QUERIES
 // @import "partials/_media-queries.scss";

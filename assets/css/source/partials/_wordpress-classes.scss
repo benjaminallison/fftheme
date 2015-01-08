@@ -1,12 +1,15 @@
 .aligncenter {
-	display: block;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .alignleft {
+	text-align: left;
 	float: left;
 }
 
 .alignright {
+	text-align: right;
 	float: right;
 }
 

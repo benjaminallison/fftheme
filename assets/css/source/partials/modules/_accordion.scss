@@ -1,0 +1,60 @@
+.accordion {
+
+}
+
+.accordion .ui-accordion-header {
+	background: #0d0;
+	@include border-radius(0.125em);
+	color: #000;
+	cursor: pointer;
+	line-height: 1.5em;
+	margin-bottom: 2px;
+	padding: 1em;
+}
+
+.accordion .ui-accordion-header-active {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+.accordion .ui-accordion-header:hover {
+	background: #0da;
+	color: #fff;
+}
+
+.accordion .ui-accordion-header span {
+	color: #976e40;
+	clear: both;
+	display: block;
+	font-size: 0.75em;
+}
+
+.accordion .ui-accordion-content {
+	background: #0d0;
+	clear: both;
+	margin: 0;
+	padding: 1em;
+}
+
+.accordion .ui-accordion-content-active {
+	margin-bottom: 2px;
+	@include border-bottom-left-radius(0.125em);
+	@include border-bottom-right-radius(0.125em);
+}
+
+.accordion h6 {
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.accordion .ui-accordion-content p {
+	margin-bottom: 1em;
+}
+
+.accordion .ui-accordion-content p:last-of-type {
+	margin: 0;
+}

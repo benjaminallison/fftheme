@@ -1,0 +1,31 @@
+footer nav {
+	list-style: none;
+}
+
+footer nav li {
+	display: inline-block;
+	padding: 0 0.25em;
+	font-size: 0.875em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #aa860b;
+}
+
+.ff-credit {
+	text-transform: lowercase;
+}
+
+.ff-credit a {
+	color: #6b6156;
+}
+
+.ff-credit a:hover {
+	color: #fff;
+}
