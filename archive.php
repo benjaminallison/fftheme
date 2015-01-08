@@ -1,13 +1,4 @@
-<?php
-/**
- * The template for displaying archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package flarn
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -34,7 +25,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php flarn_paging_nav(); ?>
+			<?php ffcc_paging_nav(); ?>
 
 		<?php else : ?>
 

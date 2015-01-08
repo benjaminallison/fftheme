@@ -5,29 +5,29 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
-}
 
-.carousel-nav li {
-	float: left;
-}
+	li {
+		float: left;
+	}
+	
+	a {
+		color: inherit;
+		display: block;
+		padding: 0;
+		text-align: center;
+	}
 
-.carousel-nav a {
-	color: inherit;
-	display: block;
-	padding: 0;
-	text-align: center;
-}
+	li.current, a:hover {
+		color: #d00;
+	}
 
-.carousel-nav li.current, .carousel-nav a:hover {
-	color: #d00;
-}
-
-.carousel-nav a img {
-	opacity: 0.5;
-}
-
-.carousel-nav a:hover img {
-	opacity: 1;
+	a img {
+		opacity: 0.5;
+	}
+	
+	a:hover img {
+		opacity: 1;
+	}
 }
 
 .carousel {
@@ -37,15 +37,15 @@
 	padding: 0;
 	position: relative;
 	visibility: hidden;
+	
+	.slide {
+		float: left;
+		position: relative;
+		width: 100%;
+	}
 }
 
 .carousel-wrap {
 	overflow: hidden;
 	position: relative;
-}
-
-.carousel .slide {
-	float: left;
-	position: relative;
-	width: 100%;
 }

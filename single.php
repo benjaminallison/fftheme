@@ -1,11 +1,4 @@
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package flarn
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -14,7 +7,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php flarn_post_nav(); ?>
+			<?php ffcc_post_nav(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template

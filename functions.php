@@ -1,9 +1,12 @@
 <?php
 	include(TEMPLATEPATH.'/lib/utilities.php');
 	include(TEMPLATEPATH.'/lib/excerpt-prefs.php');
-	include(TEMPLATEPATH.'/lib/theme-features.php');
-	include(TEMPLATEPATH.'/lib/theme-filters.php');
-	include(TEMPLATEPATH.'/lib/theme-functions.php');
-	include(TEMPLATEPATH.'/lib/styles.php');
-	include(TEMPLATEPATH.'/lib/scripts.php');
+	include(TEMPLATEPATH.'/lib/template-features.php');
+	include(TEMPLATEPATH.'/lib/template-filters.php');
+	include(TEMPLATEPATH.'/lib/template-functions.php');
+	include(TEMPLATEPATH.'/lib/template-tags.php');
+	include(TEMPLATEPATH.'/lib/enqueue-styles.php');
+	include(TEMPLATEPATH.'/lib/enqueue-scripts.php');
 	include(TEMPLATEPATH.'/lib/dequeuing.php');
+	include(TEMPLATEPATH.'/lib/cpt-init.php');
+	include(TEMPLATEPATH.'/lib/taxonomy-init.php');

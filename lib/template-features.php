@@ -7,6 +7,28 @@
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
 
+	function ffcc_widgets_init() {
+		register_sidebar( array(
+			'name'          => __( 'Left Sidebar', 'ffcc' ),
+			'id'            => 'sidebar-left',
+			'description'   => '',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		) );
+		register_sidebar( array(
+			'name'          => __( 'Right Sidebar', 'ffcc' ),
+			'id'            => 'sidebar-right',
+			'description'   => '',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		) );
+	}
+	add_action( 'widgets_init', 'ffcc_widgets_init' );
+
 	add_image_size( '16x9-small', 150, 84, true );
 	add_image_size( '16x9-medium', 600, 336, true );
 	add_image_size( '16x9-large', 1200, 675, true );

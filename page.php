@@ -1,11 +1,7 @@
 <?php get_header(); ?>
-	<main id="primary">
-		<aside id="sidebar-left" class="2-col">
-			<div class="inner-wrap">
-				<?php get_sidebar("left"); ?>
-			</div>
-		</aside>
-		<article id="content" class="8-col">
+	<main id="main">
+		<?php get_sidebar("left"); ?>
+		<article id="content" class="col-half">
 			<div class="inner-wrap">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
@@ -17,10 +13,6 @@
 				<?php endwhile; ?>
 			</div>
 		</article>
-		<aside id="sidebar-right"  class="2-col">
-			<div class="inner-wrap">
-				<?php get_sidebar("right"); ?>
-			</div>
-		</aside>
+		<?php get_sidebar("right"); ?>
 	</main><!-- #primary -->
 <?php get_footer(); ?>

@@ -53,7 +53,7 @@
 }
 
 .mobile-hide {
-	display: n-resize;
+	display: none;
 }
 
 .desktop-hide {
@@ -67,7 +67,7 @@
 
 .icomoon {
 	font-family: "icomoon";
-	font-size: 1rem;
+	font-size: 1em;
 }
 
 .button {
@@ -100,16 +100,16 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-}
 
-.proportional-inner.four-by-three {
-	padding-top: 75%;
-}
-
-.proportional-inner.three-by-two {
-	padding-top: 66.666%;
-}
-
-.proportional-inner.sixteen-by-nine {
-	padding-top: 56.25%;
+	&.four-by-three {
+		padding-top: 75%;
+	}
+	
+	&.three-by-two {
+		padding-top: 66.666%;
+	}
+	
+	&.sixteen-by-nine {
+		padding-top: 56.25%;
+	}
 }
