@@ -15,5 +15,5 @@
 			</div>
 		</article>
 		<?php get_sidebar("right"); ?>
-	</main><!-- #primary -->
+	</main><!-- #main -->
 <?php get_footer(); ?>

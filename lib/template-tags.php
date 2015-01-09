@@ -36,7 +36,7 @@
 		}
 		?>
 		<nav class="navigation paging-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'ffcc' ); ?></h1>
+			<h5 class="screen-reader-text"><?php _e( 'Posts navigation', 'ffcc' ); ?></h5>
 			<div class="nav-links">
 	
 				<?php if ( get_next_posts_link() ) : ?>
@@ -67,7 +67,7 @@
 		}
 		?>
 		<nav class="navigation post-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'ffcc' ); ?></h1>
+			<h5 class="screen-reader-text"><?php _e( 'Post navigation', 'ffcc' ); ?></h5>
 			<div class="nav-links">
 				<?php
 					previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'ffcc' ) );
