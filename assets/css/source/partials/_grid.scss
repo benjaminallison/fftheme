@@ -15,11 +15,30 @@
 	@include clearfix;
 	margin: 0 auto;
 	@extend %gutters;
+	position: relative;
 	width: $pageWidth;
 }
 
 .row {
 	@include clearfix;
+}
+
+%column {
+	@include box-sizing(border-box);
+	float: left;
+	@extend %gutters;
+}
+
+.col-right {
+	float: right;
+}
+
+.col-left {
+	float: right;
+}
+
+.col-center {
+	margin: 0 auto;
 }
 
 .col-full {
