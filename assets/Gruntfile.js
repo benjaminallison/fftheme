@@ -36,8 +36,8 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					// 'js/build/vendor.min.js': [
-					// 	'js/vendor/plugin1/jquery.plugin.js',
-					// 	'js/vendor/plugin2/js/plugin/plugin.js'
+					// 'js/vendor/plugin1/jquery.plugin.js',
+					// 'js/vendor/plugin2/js/plugin/plugin.js'
 					// ],
 					'js/build/script.min.js': [
 						'js/source/scripties.js'
@@ -82,7 +82,6 @@ module.exports = function(grunt) {
 				tasks: ['jshint', 'uglify']
 			}
 		}
-	
 	});
 
 	// load tasks

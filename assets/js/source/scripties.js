@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 	window.scrollTo(0, 1);
-	$.windowWidth, $.windowHeight;
+	$.windowWidth = null;
+	$.windowHeight = null;
 	$.mobileBreakPoint = 640;
 
 	function convertToRange(input, inLo, inHi, outLo, outHi) {
@@ -72,10 +73,10 @@ jQuery(document).ready(function($) {
 				$(".centredParallax").css({backgroundPosition: "50% " + bgPos + "px"});
 			}
 		}
-	}	
+	}
 
 	$(document).keydown(function(e) {
-		if (e.which == 27) {
+		if (e.which === 27) {
 			e.preventDefault();
 			closeMenu();
 			$("nav").animate({ left: "100%" }, 500, "easeInOutExpo");
