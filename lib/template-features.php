@@ -1,4 +1,8 @@
 <?php
+	if ( ! isset( $content_width ) ) {
+		$content_width = 1200;
+	}
+
 	add_theme_support( 'menus' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support('post-thumbnails');
@@ -6,6 +10,13 @@
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
+
+	// register_nav_menus( array(
+	// 	'primary-menu' => __( 'Main Menu', 'main-menu' ),
+	// 	'left-menu' => __( 'Left Menu', 'left-menu' ),
+	// 	'right-menu' => __( 'Right Menu', 'right-menu' ),
+	// 	'footer-menu' => __( 'Footer Menu', 'footer-menu' ),
+	// ) );
 
 	function ffcc_widgets_init() {
 		register_sidebar( array(

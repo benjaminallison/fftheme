@@ -2,19 +2,19 @@
 
 }
 
-nav {
-	float: right;
+.header-logo {
+
+}
+
+header nav {
 	ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	li {
+	> li {
 		display: inline-block;
-		ul {
-
-		}
 	}
 
 	a {
@@ -22,18 +22,76 @@ nav {
 		padding: 1em;
 		text-decoration: none;
 	}
-}
-
-nav.left-half {
-
-}
-
-nav.right-half {
+	&.left-half {
+		.sub-menu {
+			margin: 0 0 0 -7.5em;
+		}
+		> li > a {
+			padding-right: 1em;
+		}
+	}
 	
+	&.right-half {
+		.sub-menu {
+			margin: 0 0 0 -6.25em;
+		}
+		> li > a {
+			padding-left: 1em;
+		}
+	}
 }
 
-.header-logo {
 
+.sub-menu {
+	padding: 0.875em 0;
+	position: absolute;
+	top: 4.875em;
+	width: 14em;
+
+	li {
+		display: block;
+		font-size: 0.875em;
+		padding: 0;
+		position: static;
+
+		a {
+			background: #0f0;
+			display: block;
+			padding: 0.5em;
+			text-align: center;
+			&:hover {
+				background: #00f;
+			}
+		}
+	}
+}
+
+.nav-button {
+	height: 3em;
+	padding: 0.5em;
+	position: absolute;
+	right: 1em;
+	top: 1.125em;
+	width: 4.5em;
+}
+
+.nav-button:hover {
+}
+
+.nav-button .icon-open {
+	display: block;
+}
+
+.nav-button.open .icon-open {
+	display: none;
+}
+
+.nav-button .icon-close {
+	display: none;
+}
+
+.nav-button.open .icon-close {
+	display: block;
 }
 
 // MASTHEAD STYLES
@@ -48,4 +106,25 @@ nav.right-half {
 
 .carousel {
 
+}
+
+@media screen and (max-width: 640px) {
+	header nav {
+		background: rgba(#000, 0.5);
+		bottom: 0;
+		display: none;
+		left: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		position: fixed;
+		top: 0;
+		@include transition(1);
+		width: 100%;
+		z-index: 1;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	header nav.open {
+		left: 0;
+	}
 }

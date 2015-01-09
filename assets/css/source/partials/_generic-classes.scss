@@ -8,6 +8,14 @@
 	width: 100%;
 }
 
+.bg-wide {
+	background-size: 100% auto!important;
+}
+
+.bg-tall {
+	background-size: auto 100%!important;
+}
+
 .no-pad {
 	padding: 0!important;
 }
@@ -85,6 +93,12 @@
 	color: #737b35;
 }
 
+.button-icon {
+	font-size: 1.5em;
+	line-height: 1em;
+	font-family: "icomoon";
+}
+
 // PROPORTIONAL DIVS
 
 .proportional-wrap {
@@ -111,5 +125,15 @@
 	
 	&.sixteen-by-nine {
 		padding-top: 56.25%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.mobile-hide {
+		display: none;
+	}
+
+	.desktop-hide {
+		display: inherit;
 	}
 }

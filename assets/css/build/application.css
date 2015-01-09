@@ -380,7 +380,7 @@ input::-webkit-input-placeholder {
 
 /* line 55, ../source/partials/_generic-classes.scss */
 .mobile-hide {
-  display: n-resize;
+  display: none;
 }
 
 /* line 59, ../source/partials/_generic-classes.scss */
@@ -397,7 +397,7 @@ input::-webkit-input-placeholder {
 /* line 68, ../source/partials/_generic-classes.scss */
 .icomoon {
   font-family: "icomoon";
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 /* line 73, ../source/partials/_generic-classes.scss */
@@ -422,7 +422,14 @@ input::-webkit-input-placeholder {
   color: #737b35;
 }
 
-/* line 90, ../source/partials/_generic-classes.scss */
+/* line 88, ../source/partials/_generic-classes.scss */
+.button-icon {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-family: "icomoon";
+}
+
+/* line 96, ../source/partials/_generic-classes.scss */
 .proportional-wrap {
   height: 0;
   overflow: hidden;
@@ -430,7 +437,7 @@ input::-webkit-input-placeholder {
   width: 100%;
 }
 
-/* line 97, ../source/partials/_generic-classes.scss */
+/* line 103, ../source/partials/_generic-classes.scss */
 .proportional-inner {
   height: 100%;
   left: 0;
@@ -438,19 +445,30 @@ input::-webkit-input-placeholder {
   top: 0;
   width: 100%;
 }
-/* line 104, ../source/partials/_generic-classes.scss */
+/* line 110, ../source/partials/_generic-classes.scss */
 .proportional-inner.four-by-three {
   padding-top: 75%;
 }
-/* line 108, ../source/partials/_generic-classes.scss */
+/* line 114, ../source/partials/_generic-classes.scss */
 .proportional-inner.three-by-two {
   padding-top: 66.666%;
 }
-/* line 112, ../source/partials/_generic-classes.scss */
+/* line 118, ../source/partials/_generic-classes.scss */
 .proportional-inner.sixteen-by-nine {
   padding-top: 56.25%;
 }
 
+@media screen and (max-width: 640px) {
+  /* line 124, ../source/partials/_generic-classes.scss */
+  .mobile-hide {
+    display: none;
+  }
+
+  /* line 128, ../source/partials/_generic-classes.scss */
+  .desktop-hide {
+    display: inherit;
+  }
+}
 /* line 1, ../source/partials/_grid.scss */
 .gutter-pad, .container {
   padding-left: 0.5em;
@@ -591,27 +609,82 @@ input::-webkit-input-placeholder {
   width: 8.333%;
 }
 
-/* line 5, ../source/partials/modules/_header.scss */
-nav {
+/* line 9, ../source/partials/modules/_header.scss */
+header nav {
   float: right;
 }
-/* line 7, ../source/partials/modules/_header.scss */
-nav ul {
+/* line 11, ../source/partials/modules/_header.scss */
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 13, ../source/partials/modules/_header.scss */
-nav li {
+/* line 17, ../source/partials/modules/_header.scss */
+header nav li {
   display: inline-block;
 }
-/* line 20, ../source/partials/modules/_header.scss */
-nav a {
+/* line 24, ../source/partials/modules/_header.scss */
+header nav a {
   display: block;
   padding: 1em;
   text-decoration: none;
 }
 
+/* line 38, ../source/partials/modules/_header.scss */
+.nav-button {
+  height: 3em;
+  padding: 0.5em;
+  position: absolute;
+  right: 1em;
+  top: 1.125em;
+  width: 4.5em;
+}
+
+/* line 50, ../source/partials/modules/_header.scss */
+.nav-button .icon-open {
+  display: block;
+}
+
+/* line 54, ../source/partials/modules/_header.scss */
+.nav-button.open .icon-open {
+  display: none;
+}
+
+/* line 58, ../source/partials/modules/_header.scss */
+.nav-button .icon-close {
+  display: none;
+}
+
+/* line 62, ../source/partials/modules/_header.scss */
+.nav-button.open .icon-close {
+  display: block;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 81, ../source/partials/modules/_header.scss */
+  header nav {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    left: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    -moz-transition: 1;
+    -o-transition: 1;
+    -webkit-transition: 1;
+    transition: 1;
+    width: 100%;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* line 96, ../source/partials/modules/_header.scss */
+  header nav.block {
+    left: 0;
+  }
+}
 /* line 1, ../source/partials/modules/_main-content.scss */
 .content {
   margin: 0 0 2em 0;
@@ -629,31 +702,26 @@ nav a {
   padding: 0;
   width: 100%;
 }
-
-/* line 10, ../source/partials/modules/_carousel.scss */
+/* line 9, ../source/partials/modules/_carousel.scss */
 .carousel-nav li {
   float: left;
 }
-
-/* line 14, ../source/partials/modules/_carousel.scss */
+/* line 13, ../source/partials/modules/_carousel.scss */
 .carousel-nav a {
   color: inherit;
   display: block;
   padding: 0;
   text-align: center;
 }
-
-/* line 21, ../source/partials/modules/_carousel.scss */
+/* line 20, ../source/partials/modules/_carousel.scss */
 .carousel-nav li.current, .carousel-nav a:hover {
   color: #d00;
 }
-
-/* line 25, ../source/partials/modules/_carousel.scss */
+/* line 24, ../source/partials/modules/_carousel.scss */
 .carousel-nav a img {
   opacity: 0.5;
 }
-
-/* line 29, ../source/partials/modules/_carousel.scss */
+/* line 28, ../source/partials/modules/_carousel.scss */
 .carousel-nav a:hover img {
   opacity: 1;
 }
@@ -667,18 +735,17 @@ nav a {
   position: relative;
   visibility: hidden;
 }
-
-/* line 42, ../source/partials/modules/_carousel.scss */
-.carousel-wrap {
-  overflow: hidden;
-  position: relative;
-}
-
-/* line 47, ../source/partials/modules/_carousel.scss */
+/* line 41, ../source/partials/modules/_carousel.scss */
 .carousel .slide {
   float: left;
   position: relative;
   width: 100%;
+}
+
+/* line 48, ../source/partials/modules/_carousel.scss */
+.carousel-wrap {
+  overflow: hidden;
+  position: relative;
 }
 
 /* line 5, ../source/partials/modules/_accordion.scss */

@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 	<main id="main">
+		<?php get_template_part("content", "hero");?>
 		<?php get_sidebar("left"); ?>
 		<article id="content" class="col-half">
 			<div class="inner-wrap">

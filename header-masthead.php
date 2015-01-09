@@ -9,6 +9,9 @@
 				<?php wp_nav_menu( $menuParameters ); ?>
 			</ul>
 		</nav>
-		<button class="button nav-button">Toggle Navigation</button>
+		<button id="button nav-toggle">
+			<span class="button-icon icon-open">&#xe689;</span>
+			<span class="button-icon icon-close">&#xe68d;</span>
+		</button>
 	</div>
 </header>
