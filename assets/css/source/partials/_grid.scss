@@ -12,6 +12,7 @@
 }
 
 .container {
+	@include box-sizing(border-box);
 	@include clearfix;
 	margin: 0 auto;
 	@extend %gutters;
