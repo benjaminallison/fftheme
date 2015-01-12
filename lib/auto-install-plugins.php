@@ -1,95 +1,83 @@
 <?php 
+	require(dirname(__FILE__) .'/vendor/class-tgm-plugin-activation.php');
 
-	// instantiate ACF Pro
-	add_filter('acf/settings/path', 'my_acf_settings_path');
-	function my_acf_settings_path( $path ) {
-		$path = get_stylesheet_directory_uri() .'/lib/vendor/advanced-custom-fields-pro/';
-		return $path;
-	}
-
-	add_filter('acf/settings/dir', 'my_acf_settings_dir');
-	function my_acf_settings_dir( $dir ) {
-		$dir = get_stylesheet_directory_uri() .'/lib/vendor/advanced-custom-fields-pro/';
-		return $dir;
-	}
-
-	include_once( get_stylesheet_directory_uri() .'/lib/vendor/advanced-custom-fields-pro/acf.php' );
-
-	// and create default custom fields!
-	add_filter('acf/settings/load_json', 'my_acf_json_load_point');
-	function my_acf_json_load_point( $paths ) {
-		unset($paths[0]);
-		$paths[] = get_stylesheet_directory() . '/lib/acf-json';
-		return $paths;
-	}
-
-
-	// auto-install all other plugins
-	require_once( dirname(__FILE__) .'/lib/vendor/class-tgm-plugin-activation.php');
-
-	add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
+	add_action( 'tgmpa_register', 'my_theme_register_required_plugins');
 
 	function my_theme_register_required_plugins() {
 
 		$plugins = array(
 			array(
 				'name'	=> 'Duplicator',
-				'slug'	=> 'duplicator'
+				'slug'	=> 'duplicator',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Manual Image Crop',
-				'slug'	=> 'manual-image-crop'
+				'slug'	=> 'manual-image-crop',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'iThemes Security',
 				'slug'	=> 'better-wp-security',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Regenerate Thumbnails',
 				'slug'	=> 'regenerate-thumbnails',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Simple Page Ordering',
 				'slug'	=> 'simple-page-ordering',
+				'required'	=> true,
 				'force_activation'	=> true
 			),
 			array(
 				'name'	=> 'Theme Check',
-				'slug'	=> 'theme-check'
+				'slug'	=> 'theme-check',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Wordpress Importer',
-				'slug'	=> 'wordpress-importer'
+				'slug'	=> 'wordpress-importer',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'WP Ultimate CSV Importer',
-				'slug'	=> 'wp-ultimate-csv-importer'
+				'slug'	=> 'wp-ultimate-csv-importer',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Contact Form 7',
-				'slug'	=> 'contact-form-7'
+				'slug'	=> 'contact-form-7',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Google Analyticator',
-				'slug'	=> 'google-analyticator'
+				'slug'	=> 'google-analyticator',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Mailchimp for WP',
-				'slug'	=> 'mailchimp-for-wp'
+				'slug'	=> 'mailchimp-for-wp',
+				'required'	=> true
 			),
 			array(
 				'name'	=> 'Shortcode Menu',
-				'slug'	=> 'shortcode-menu'
+				'slug'	=> 'shortcode-menu',
+				'required'	=> true
 			),
 			array(
 				'name'		=> 'WP DB Sync',
 				'slug'		=> 'wp-db-sync',
-				'source'	=> 'https://github.com/wp-sync-db/wp-sync-db/archive/master.zip'
+				'source'	=> 'https://github.com/wp-sync-db/wp-sync-db/archive/master.zip',
+				'required'	=> true
 			),
 			array(
 				'name'		=> 'Firefly Trade and Media',
 				'slug'		=> 'firefly-trade-media',
-				'source'	=> get_stylesheet_directory() . '/lib/vendor/firefly-trade-media.zip'
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/firefly-trade-media.zip',
+				'required'	=> true
 			),
 		);
 	
