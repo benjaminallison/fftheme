@@ -1,12 +1,13 @@
 <?php
-	include(TEMPLATEPATH.'/lib/utilities.php');
-	include(TEMPLATEPATH.'/lib/excerpt-prefs.php');
-	include(TEMPLATEPATH.'/lib/template-features.php');
-	include(TEMPLATEPATH.'/lib/template-filters.php');
-	include(TEMPLATEPATH.'/lib/template-functions.php');
-	include(TEMPLATEPATH.'/lib/template-tags.php');
-	include(TEMPLATEPATH.'/lib/enqueue-styles.php');
-	include(TEMPLATEPATH.'/lib/enqueue-scripts.php');
-	include(TEMPLATEPATH.'/lib/dequeuing.php');
-	include(TEMPLATEPATH.'/lib/cpt-init.php');
-	include(TEMPLATEPATH.'/lib/taxonomy-init.php');
+	include(dirname(__FILE__) . '/lib/utilities.php');
+	include(dirname(__FILE__) . '/lib/excerpt-prefs.php');
+	include(dirname(__FILE__) . '/lib/template-features.php');
+	include(dirname(__FILE__) . '/lib/template-filters.php');
+	include(dirname(__FILE__) . '/lib/template-functions.php');
+	include(dirname(__FILE__) . '/lib/template-tags.php');
+	include(dirname(__FILE__) . '/lib/enqueue-styles.php');
+	include(dirname(__FILE__) . '/lib/enqueue-scripts.php');
+	include(dirname(__FILE__) . '/lib/dequeuing.php');
+	include(dirname(__FILE__) . '/lib/cpt-init.php');
+	include(dirname(__FILE__) . '/lib/taxonomy-init.php');
+	include(dirname(__FILE__) . '/lib/auto-install-plugins.php');
