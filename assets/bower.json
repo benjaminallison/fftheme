@@ -6,7 +6,8 @@
 		"jquery-hoverIntent": "*",
 		"ScrollMagic": "~1.3.0",
 		"fancybox" : "~2",
-		"jquery.scrollTo":  ">1.x" // same as ~1 ^1.0.0
+		"jquery.scrollTo":  ">1.x", // same as ~1 ^1.0.0
+		"waitForImages": "~2"
 	},
 	"private": true
 }
