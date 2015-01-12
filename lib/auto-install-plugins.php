@@ -1,4 +1,30 @@
-<?php
+<?php 
+
+	// instantiate ACF Pro
+	add_filter('acf/settings/path', 'my_acf_settings_path');
+	function my_acf_settings_path( $path ) {
+		$path = get_stylesheet_directory_uri() .'/lib/vendor/advanced-custom-fields-pro/';
+		return $path;
+	}
+
+	add_filter('acf/settings/dir', 'my_acf_settings_dir');
+	function my_acf_settings_dir( $dir ) {
+		$dir = get_stylesheet_directory_uri() .'/lib/vendor/advanced-custom-fields-pro/';
+		return $dir;
+	}
+
+	include_once( get_stylesheet_directory_uri() .'/lib/vendor/advanced-custom-fields-pro/acf.php' );
+
+	// and create default custom fields!
+	add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+	function my_acf_json_load_point( $paths ) {
+		unset($paths[0]);
+		$paths[] = get_stylesheet_directory() . '/lib/acf-json';
+		return $paths;
+	}
+
+
+	// auto-install all other plugins
 	require_once( dirname(__FILE__) .'/lib/vendor/class-tgm-plugin-activation.php');
 
 	add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
@@ -6,11 +32,6 @@
 	function my_theme_register_required_plugins() {
 
 		$plugins = array(
-			array(
-				'name'	=> 'Advanced Custom Fields',
-				'slug'	=> 'advanced-custom-fields',
-				'force_activation'	=> true
-			),
 			array(
 				'name'	=> 'Duplicator',
 				'slug'	=> 'duplicator'
