@@ -2,6 +2,14 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
+		bower: {
+			install: {
+				options{
+					targetDir: "js",
+					layout: "byComponent"
+				}
+			}
+		},
 		// let us know if our JS is sound
 		jshint: {
 			options: {
@@ -88,6 +96,7 @@ module.exports = function(grunt) {
 	});
 
 	// load tasks
+	grunt.loadNpmTasks('grunt-bower-task');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-compass');

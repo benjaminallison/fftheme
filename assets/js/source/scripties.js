@@ -4,10 +4,6 @@ jQuery(document).ready(function($) {
 	$.windowHeight = null;
 	$.mobileBreakPoint = 640;
 
-	function convertToRange(input, inLo, inHi, outLo, outHi) {
-		return ((input - inLo) / (inHi - inLo)) * (outHi - outLo) + outLo;
-	}
-
 	function getViewportDimensions() {
 		var e = window, a = 'inner';
 		if (!('innerWidth' in window )) {
@@ -50,30 +46,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	// simple, subtle parallax on the hero image, which tries to keep image vertically centred as much as possible!
-	// the standard jQuery parallax plugin aligns the top, making the image not centred
-	function centredParallax() {
-		if ( $.windowWidth > $.mobileBreakPoint ) {
-			var scrollPos = $(window).scrollTop();
-			var heroWidth = $(".centredParallax").outerWidth();
-			var heroHeight = $(".centredParallax").outerHeight();
-			var heroRatio = heroWidth/heroHeight;
-			var bgTrueWidth = $(".centredParallax").data("bgwidth");
-			var bgTrueHeight = $(".centredParallax").data("bgheight");
-			var trueRatio = bgTrueWidth/bgTrueHeight;
-			var heroBgScale = heroHeight + 100;
-			var bgPos = convertToRange(scrollPos, 1, heroHeight, 1, 200);
-			if ( trueRatio < heroRatio ) {
-				$(".centredParallax").removeClass("bg-tall");
-				$(".centredParallax").addClass("bg-wide");
-				$(".centredParallax").css({backgroundPosition: "50% " + bgPos + "px"});
-			} else {
-				$(".centredParallax").removeClass("bg-wide");
-				$(".centredParallax").addClass("bg-tall");
-				$(".centredParallax").css({backgroundPosition: "50% " + bgPos + "px"});
-			}
-		}
-	}
+	$("#header").centredParallax();
 
 	$(document).keydown(function(e) {
 		if (e.which === 27) {
