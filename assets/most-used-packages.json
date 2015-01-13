@@ -1,0 +1,9 @@
+{
+	"html5shiv": "*",
+	"swipejs": "~2",
+	"jquery-hoverIntent": "*",
+	"ScrollMagic": "~1.3.0",
+	"fancybox" : "~2",
+	"jquery.scrollTo":  "*",
+	"waitForImages": "~2"
+}

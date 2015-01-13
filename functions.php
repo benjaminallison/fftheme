@@ -8,6 +8,7 @@
 	include(dirname(__FILE__) . '/lib/enqueue-styles.php');
 	include(dirname(__FILE__) . '/lib/enqueue-scripts.php');
 	include(dirname(__FILE__) . '/lib/dequeuing.php');
+	include(dirname(__FILE__) . '/lib/default-setup.php');
 	include(dirname(__FILE__) . '/lib/cpt-init.php');
 	include(dirname(__FILE__) . '/lib/taxonomy-init.php');
 	include(dirname(__FILE__) . '/lib/auto-install-plugins.php');

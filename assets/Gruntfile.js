@@ -73,7 +73,10 @@ module.exports = function(grunt) {
 					'css/vendor/*',
 					'css/vendor/**/*'
 				],
-				tasks: ['compass']
+				tasks: ['compass'],
+				options: {
+					livereload: 35729
+				}
 			},
 			js: {
 				files: [

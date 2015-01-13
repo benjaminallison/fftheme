@@ -11,10 +11,9 @@ header nav {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-	}
-
-	> li {
-		display: inline-block;
+		> li {
+			display: inline-block;
+		}
 	}
 
 	a {
@@ -22,7 +21,7 @@ header nav {
 		padding: 1em;
 		text-decoration: none;
 	}
-	&.left-half {
+	&.left-menu {
 		.sub-menu {
 			margin: 0 0 0 -7.5em;
 		}
@@ -31,7 +30,7 @@ header nav {
 		}
 	}
 	
-	&.right-half {
+	&.right-menu {
 		.sub-menu {
 			margin: 0 0 0 -6.25em;
 		}

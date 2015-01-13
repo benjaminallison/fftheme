@@ -89,12 +89,12 @@
 
 .col-7-12 {
 	@include column;
-	width: 58.333;
+	width: 58.333%;
 }
 
 .col-5-12 {
 	@include column;
-	width: 41.667;
+	width: 41.667%;
 }
 
 .col-1-12 {
