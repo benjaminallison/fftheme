@@ -13,6 +13,5 @@
 	include(dirname(__FILE__) . '/lib/taxonomy-init.php');
 	include(dirname(__FILE__) . '/lib/auto-install-plugins.php');
 
-	<%= conf.get('wpDir') %> // DID IT WORK?
-
-	/* HEY THIS IS A TEMPLATING TEST: <%= conf.get('wpDir') %> <%= conf.get('tablePrefix') %> */
+	<%= conf.get('themeDir') %> // DID IT WORK?
+	/* HEY THIS IS A TEMPLATING TEST: <%= conf.get('themeDir') %> <%= conf.get('tablePrefix') %> */
