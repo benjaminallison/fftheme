@@ -1,8 +1,9 @@
 jQuery(document).ready(function($) {
 	window.scrollTo(0, 1);
-	$.windowWidth = null;
+	$.windowWidth = 34;
 	$.windowHeight = null;
 	$.mobileBreakPoint = 640;
+
 
 	function getViewportDimensions() {
 		var e = window, a = 'inner';
@@ -13,10 +14,9 @@ jQuery(document).ready(function($) {
 		$.windowWidth = e[ a+'Width' ];
 		$.windowHeight = e[ a+'Height' ];
 	}
+	getViewportDimensions();
 
 	function windowResizeBehaviour() {
-		getViewportDimensions();
-		centredParallax();
 	}
 
 	// mobile menu toggle
@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	$("#header").centredParallax();
+	$("#header").centredParallax($.mobileBreakPoint);
 
 	$(document).keydown(function(e) {
 		if (e.which === 27) {
@@ -57,16 +57,14 @@ jQuery(document).ready(function($) {
 	});
 
 	$(window).resize(function(){
-		windowResizeBehaviour();
+		getViewportDimensions();
 	});
 
 	$(window).load(function() {
-		windowResizeBehaviour();
+		getViewportDimensions();
 	});
 
 	$(window).scroll(function () {
-		centredParallax();
-	});
 
-	windowResizeBehaviour();
+	});
 });

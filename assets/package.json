@@ -1,10 +1,11 @@
 {
-	"name": "client",
+	"name": "<%= conf.get('themeDir') %>",
 	"version": "1.0.0",
-	"description": "Custom WordPress theme for Client by Firefly Creative Company",
+	"description": "Custom WordPress theme for <%= conf.get('themeDir') %> by Firefly Creative Company",
 	"main": "Gruntfile.js",
 	"dependencies": {
 		"grunt": "~0.4.5",
+		"grunt-bower-task": "~0.4.0",
 		"grunt-contrib-compass": "~0.4.0",
 		"grunt-contrib-jshint": "~0.4.0",
 		"grunt-contrib-uglify": "~0.4.0",

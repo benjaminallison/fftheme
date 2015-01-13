@@ -1,5 +1,5 @@
 {
-	"name": "iz-theme",
+	"name": "<%= conf.get('themeDir') %>",
 	"version": "1.0",
 	"dependencies": {
 		"html5shiv": "*",
@@ -7,8 +7,8 @@
 		"jquery-hoverIntent": "*",
 		"ScrollMagic": "~1.3.0",
 		"fancybox" : "~2",
-		"jquery.scrollTo":  ">1.x", // same as ~1 ^1.0.0
-		"waitForImages": "~2",
+		"jquery.scrollTo":  ">1.x",
+		"waitForImages": "~2"
 	},
 	"ignoredDependencies": [
 		"jquery"

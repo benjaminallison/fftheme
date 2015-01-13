@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		bower: {
 			install: {
-				options{
+				options: {
 					targetDir: "js",
 					layout: "byComponent"
 				}
@@ -43,10 +43,10 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				files: {
-					// 'js/build/vendor.min.js': [
-					// 'js/vendor/plugin1/jquery.plugin.js',
-					// 'js/vendor/plugin2/js/plugin/plugin.js'
-					// ],
+					'js/build/vendor.min.js': [
+						'js/vendor/jquery.scrollTo/jquery.scrollTo.min.js',
+						'js/vendor/jquery-hoverIntent/jquery.hoverIntent.js'
+					],
 					'js/build/script.min.js': [
 						'js/source/scripties.js'
 					]
@@ -104,6 +104,7 @@ module.exports = function(grunt) {
 
 	// register task
 	grunt.registerTask('default', [
+		// "bower", // can't run until ignoreDependencies is official in Bower
 		'jshint',
 		'compass',
 		'uglify',
