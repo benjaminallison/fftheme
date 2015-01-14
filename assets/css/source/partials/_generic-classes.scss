@@ -80,11 +80,12 @@
 
 .button {
 	@include box-sizing(border-box);
-	display: block;
+	display: inline-block;
 	background: #392c1e;
 	color: #fff;
 	padding: 1em;
 	text-align: center;
+	text-decoration: none;
 	@include transition(0.5s);
 }
 
