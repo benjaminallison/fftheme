@@ -8,9 +8,9 @@
 					<?php get_template_part( 'content', 'single' ); ?>
 					<?php ffcc_post_nav(); ?>
 					<?php
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
+						// if ( comments_open() || get_comments_number() ) :
+						// 	comments_template();
+						// endif;
 					?>
 				<?php endwhile; // end of the loop. ?>
 			</div>

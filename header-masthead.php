@@ -1,13 +1,23 @@
-<header id="header" class="section-block">
+<header id="header" class="masthead centredParallax">
 	<div class="container">
-		<a id="header-logo" class="col-1-6 gutter-pad" href="<?php echo home_url(); ?>">
-			<img src="<?php echo get_template_directory_uri();?>/images/logo.png" class="full-height" alt="site name"/>
-		</a>
-		<nav id="nav" class="col-5-6 gutter-pad">
-			<?php $menuParameters = array( 'container' => false, 'items_wrap' => '%3$s' ) ; ?>
-			<ul id="menu-main" class="menu">
-				<?php wp_nav_menu( $menuParameters ); ?>
-			</ul>
+		<nav id="nav" class="col-full">
+			<div class="col-5-12 gutter-pad header-logo">
+				<a href="#" class="button alignleft">Member SignUp</a>
+				<?php $leftMenuParams = array( 'theme_location' => 'left-menu', 'container' => false, 'items_wrap' => '%3$s' ) ; ?>
+				<ul id="left-menu" class="menu left-menu">
+					<?php wp_nav_menu( $leftMenuParams ); ?>
+				</ul>
+			</div>
+			<a class="col-1-6 gutter-pad header-logo" href="<?php echo home_url(); ?>">
+				<img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" class="full-width" alt="" />
+			</a>
+			<div class="col-5-12 gutter-pad header-logo">
+				<a href="#" class="button alignright">Member Login</a>
+				<?php $rightMenuParams = array( 'theme_location' => 'right-menu', 'container' => false, 'items_wrap' => '%3$s' ) ; ?>
+				<ul id="right-menu" class="right-menu menu">
+					<?php wp_nav_menu( $rightMenuParams ); ?>
+				</ul>
+			</div>
 		</nav>
 		<button id="button nav-toggle">
 			<span class="button-icon icon-open">&#xe689;</span>

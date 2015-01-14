@@ -6,40 +6,58 @@
 
 }
 
-header nav {
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		> li {
-			display: inline-block;
+.masthead {
+	background: url("../../images/hero-home.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	background-color: #020;
+	nav {
+		padding-top: 1em;
+		.menu {
+			@include clearfix;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			> li {
+				display: inline-block;
+			}
+			a {
+				color: #fff;
+				display: block;
+				font-size: 0.875em;
+				letter-spacing: 0.125em;
+				padding: 1em;
+				text-align: center;
+				text-decoration: none;
+				@include text-shadow(0 1px 0 $dark-grey);
+				text-transform: uppercase;
+			}
+		
+			a:hover {
+				background: rgba($dark-grey, 0.25);
+				border-bottom: 1px solid $wheat;
+			}
 		}
-	}
-
-	a {
-		display: block;
-		padding: 1em;
-		text-decoration: none;
-	}
-	&.left-menu {
-		.sub-menu {
-			margin: 0 0 0 -7.5em;
+		&.left-menu {
+			.sub-menu {
+				margin: 0 0 0 -7.5em;
+			}
+			> li > a {
+				padding-right: 1em;
+			}
 		}
-		> li > a {
-			padding-right: 1em;
-		}
-	}
-	
-	&.right-menu {
-		.sub-menu {
-			margin: 0 0 0 -6.25em;
-		}
-		> li > a {
-			padding-left: 1em;
+		
+		&.right-menu {
+			.sub-menu {
+				margin: 0 0 0 -6.25em;
+			}
+			> li > a {
+				padding-left: 1em;
+			}
 		}
 	}
 }
-
 
 .sub-menu {
 	padding: 0.875em 0;
