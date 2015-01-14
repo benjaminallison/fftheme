@@ -12,7 +12,7 @@
 	// }
 	$hero = wp_get_attachment_image_src(get_post_thumbnail_id($postID), "large");
 ?>
-<div class="hero" style="background-image: url('<?php echo $hero[0];?>');" data-bgwidth="<?php echo $hero[1];?>" data-bgheight="<?php echo $hero[2];?>">
+<div class="hero" style="background-image: url('<?php echo $hero[0];?>');">
 <?php if ( is_front_page() ) { ?>
 	<!-- -->
 <?php } ?>

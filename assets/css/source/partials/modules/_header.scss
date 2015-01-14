@@ -83,7 +83,7 @@
 	}
 }
 
-.nav-button {
+.nav-toggle {
 	height: 3em;
 	padding: 0.5em;
 	position: absolute;
@@ -92,22 +92,22 @@
 	width: 4.5em;
 }
 
-.nav-button:hover {
+.nav-toggle:hover {
 }
 
-.nav-button .icon-open {
+.nav-toggle .icon-open {
 	display: block;
 }
 
-.nav-button.open .icon-open {
+.nav-toggle.open .icon-open {
 	display: none;
 }
 
-.nav-button .icon-close {
+.nav-toggle .icon-close {
 	display: none;
 }
 
-.nav-button.open .icon-close {
+.nav-toggle.open .icon-close {
 	display: block;
 }
 
@@ -126,22 +126,28 @@
 }
 
 @media screen and (max-width: 640px) {
-	header nav {
-		background: rgba(#000, 0.5);
-		bottom: 0;
-		display: none;
-		left: 100%;
-		overflow-y: scroll;
-		overflow-x: hidden;
-		position: fixed;
-		top: 0;
-		@include transition(1);
-		width: 100%;
-		z-index: 1;
-		-webkit-overflow-scrolling: touch;
+	.masthead {
+		 nav {
+			background: rgba(#000, 0.5);
+			bottom: 0;
+			display: none;
+			left: 100%;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			position: fixed;
+			top: 0;
+			@include transition(1);
+			width: 100%;
+			z-index: 1;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		nav.open {
+			left: 0;
+		}
 	}
 
-	header nav.open {
-		left: 0;
+	.nav-toggle {
+		display: block;
 	}
 }

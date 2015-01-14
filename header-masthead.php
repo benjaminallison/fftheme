@@ -19,7 +19,7 @@
 				</ul>
 			</div>
 		</nav>
-		<button id="button nav-toggle">
+		<button id="nav-toggle" class="button nav-toggle">
 			<span class="button-icon icon-open">&#xe689;</span>
 			<span class="button-icon icon-close">&#xe68d;</span>
 		</button>
