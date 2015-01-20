@@ -5,8 +5,8 @@
 		wp_register_script( '<%= conf.get('themeDir') %>-scripts', get_template_directory_uri() . '/assets/js/build/script.min.js', array("jquery"), 1.0 , true );
 		wp_enqueue_script( '<%= conf.get('themeDir') %>-scripts' );
 
-		if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
-			wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
+		if (in_array($_SERVER['SERVER_NAME'], array('<%= conf.get('themeDir') %>.local'))) {
+			wp_register_script('livereload', 'http://<%= conf.get('themeDir') %>.local:35729/livereload.js?snipver=1', null, false, true);
 			wp_enqueue_script('livereload');
 		}
 

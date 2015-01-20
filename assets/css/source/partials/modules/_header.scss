@@ -21,6 +21,11 @@
 			padding: 0;
 			> li {
 				display: inline-block;
+				font-size: 16px; // this overrides the font-size 0 from the equisdistant placement
+				position: relative;
+				&:hover .sub-menu {
+					display: block;
+				}
 			}
 			a {
 				color: #fff;
@@ -56,28 +61,32 @@
 				padding-left: 1em;
 			}
 		}
-	}
-}
 
-.sub-menu {
-	padding: 0.875em 0;
-	position: absolute;
-	top: 4.875em;
-	width: 14em;
-
-	li {
-		display: block;
-		font-size: 0.875em;
-		padding: 0;
-		position: static;
-
-		a {
-			background: #0f0;
+		.sub-menu {
+			background: rgba(#000, 0.85);
 			display: block;
-			padding: 0.5em;
-			text-align: center;
-			&:hover {
-				background: #00f;
+			left: 50%;
+			margin-left: -7em;
+			padding: 1em;
+			position: absolute;
+			top: 2.5em;
+			width: 14em;
+			li {
+				display: block;
+				font-size: 0.875em;
+				padding: 0;
+				position: static;
+		
+				a {
+					color: #aaa;
+					display: block;
+					padding: 0.5em;
+					text-align: center;
+					&:hover {
+						background: #aaa;
+						color: #000;
+					}
+				}
 			}
 		}
 	}

@@ -100,6 +100,24 @@
 	font-family: "icomoon";
 }
 
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.equidistant {
+	font-size: 0.1px;
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+	&:after {
+		content: '';
+		width: 100%;
+		display: inline-block!important;
+	}
+}
+
 // PROPORTIONAL DIVS
 
 .proportional-wrap {
@@ -107,15 +125,7 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-}
-
-.proportional-inner {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-
+	
 	&.four-by-three {
 		padding-top: 75%;
 	}
@@ -126,6 +136,18 @@
 	
 	&.sixteen-by-nine {
 		padding-top: 56.25%;
+	}
+	
+	&.two-by-one {
+		padding-top: 50%;
+	}
+
+	.proportional-inner {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
 	}
 }
 

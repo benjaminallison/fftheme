@@ -29,6 +29,7 @@ module.exports = function(grunt) {
 				"strict": false,
 				"trailing": true,
 				"undef": true,
+				"devel": true,
 				"globals": {
 					"jQuery": true,
 					"alert": true
@@ -44,8 +45,14 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'js/build/vendor.min.js': [
-						'js/vendor/jquery.scrollTo/jquery.scrollTo.min.js',
-						'js/vendor/jquery-hoverIntent/jquery.hoverIntent.js'
+						//'js/vendor/gsap/src/minified/TweenMax.min.js',
+						//'js/vendor/ScrollMagic/js/jquery.scrollmagic.min.js',
+						// 'js/vendor/fancybox/source/jquery.fancybox.pack.js',
+						// 'js/vendor/jquery-hoverIntent/jquery.hoverIntent.js',
+						// 'js/vendor/jquery.scrollTo/jquery.scrollTo.min.js',
+						// 'js/vendor/swipejs/swipe.js',
+						// 'js/vendor/select2/dist/js/select2.min.js',
+						// 'js/vendor/waitForImages/dist/jquery.waitforimages.min.js'
 					],
 					'js/build/script.min.js': [
 						'js/source/scripties.js'
@@ -91,6 +98,26 @@ module.exports = function(grunt) {
 					'<%= jshint.all %>'
 				],
 				tasks: ['jshint', 'uglify']
+			},
+			php: {
+				files: ['../**/*.php'],
+				options: {
+					livereload: 35729
+				}
+			}
+		},
+		imagemin: {                          // Task
+			dynamic: {
+				options: {                       // Target options
+					optimizationLevel: 3,
+					svgoPlugins: [{ removeViewBox: false }]
+				},
+				files: [{
+					expand: true,                  // Enable dynamic expansion
+					cwd: 'src/',                   // Src matches are relative to this path
+					src: ['images/*.{png,jpg,gif}'],   // Actual patterns to match
+					dest: 'images/compressed/'                  // Destination path prefix
+				}]
 			}
 		}
 	});
@@ -101,6 +128,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	// register task
 	grunt.registerTask('default', [
@@ -108,7 +136,8 @@ module.exports = function(grunt) {
 		'jshint',
 		'compass',
 		'uglify',
-		'watch'
+		'watch',
+		'imagemin'
 	]);
 
 };

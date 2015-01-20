@@ -1,18 +1,17 @@
-/* 24px */
-
+/*24px*/
 @font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-e43ed1');
-	src:url('fonts/icomoon.eot?#iefix-e43ed1') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-e43ed1') format('woff'),
-		url('fonts/icomoon.ttf?-e43ed1') format('truetype'),
-		url('fonts/icomoon.svg?-e43ed1#icomoon') format('svg');
+	font-family: 'feather';
+	src:url('fonts/feather.eot?-e43ed1');
+	src:url('fonts/feather.eot?#iefix-e43ed1') format('embedded-opentype'),
+		url('fonts/feather.woff?-e43ed1') format('woff'),
+		url('fonts/feather.ttf?-e43ed1') format('truetype'),
+		url('fonts/feather.svg?-e43ed1#feather') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
+	font-family: 'feather';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
