@@ -57,6 +57,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 button, input, select, textarea {
 	border: none;
+	@include border-radius(0);
 	@include box-sizing(border-box);
 	display: block;
 	font-family: inherit;

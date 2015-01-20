@@ -5,5 +5,10 @@
 	"ScrollMagic": "~1.3.0",
 	"fancybox" : "~2",
 	"jquery.scrollTo":  "*",
-	"waitForImages": "~2"
+	"waitForImages": ">2.x",
+	"history.js" : ">1.x",
+	"jsviews" : ">1.x",
+	// "jsrender", : "~1.3"
+	"jquery-scrollstop": ">1.x",
+	"jquery.lazyload": ">1.x"
 }
