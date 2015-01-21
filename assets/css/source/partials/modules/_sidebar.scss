@@ -1,3 +1,22 @@
 .widget {
 	
 }
+
+.sidebar-menu {
+	li {
+		margin-bottom: 0.5em;
+	}
+
+	a {
+		font-size: 1em;
+		line-height: 1.25em;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#sidebar-left {
+		display: none;
+	}
+}

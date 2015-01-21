@@ -20,8 +20,13 @@
 			</div>
 		</nav>
 		<button id="nav-toggle" class="button nav-toggle">
-			<span class="button-icon icon-open">&#xe689;</span>
-			<span class="button-icon icon-close">&#xe68d;</span>
+			<!-- <span class="icon button-icon icon-bars nav-open"></span>
+			<span class="icon button-icon icon-close nav-close"></span> -->
+			<div class="menuBurg">
+				<span class="burgLine topBurg"></span>
+				<span class="burgLine midBurg"></span>
+				<span class="burgLine botBurg"></span>
+			</div>
 		</button>
 	</div>
 </header>

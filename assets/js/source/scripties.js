@@ -25,18 +25,18 @@ jQuery(document).ready(function($) {
 	function openMenu() {
 		menuStatus = "open";
 		$("body").addClass("no-scroll");
-		$(".nav-toggle").addClass("open");
+		$("#nav-toggle").addClass("open");
 		$("nav").addClass("open");
 	}
 
 	function closeMenu() {
 		menuStatus = "closed";
 		$("body").removeClass("no-scroll");
-		$(".nav-toggle").removeClass("open");
+		$("#nav-toggle").removeClass("open");
 		$("nav").removeClass("open");
 	}
 
-	$(".nav-toggle").click(function(){
+	$("#nav-toggle").click(function(){
 		if (menuStatus === "closed") {
 			openMenu();
 			$("nav").animate({ left: 0 }, 500, "easeInOutExpo");

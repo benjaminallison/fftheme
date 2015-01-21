@@ -1,5 +1,5 @@
-.admin-bar {
-
+header {
+	width: 100%;
 }
 
 .header-logo {
@@ -93,50 +93,92 @@
 }
 
 .nav-toggle {
+	display: none;
 	height: 3em;
+	outline: none;
 	padding: 0.5em;
 	position: absolute;
 	right: 1em;
 	top: 1.125em;
 	width: 4.5em;
+	&:focus {
+		outline: none;
+	}
 }
-
 .nav-toggle:hover {
 }
 
-.nav-toggle .icon-open {
+.nav-toggle .nav-open {
 	display: block;
 }
 
-.nav-toggle.open .icon-open {
+.nav-toggle.open .nav-open {
 	display: none;
 }
 
-.nav-toggle .icon-close {
+.nav-toggle .nav-close {
 	display: none;
 }
 
-.nav-toggle.open .icon-close {
+.nav-toggle.open .nav-close {
 	display: block;
 }
 
-// MASTHEAD STYLES
 
-.hero {
-
+.menuBurg {
+	left: 21px;
+	height: 30px;
+	position: absolute;
+	width: 30px;
+	top: 9px;
+	.burgLine {
+		background: $dark-grey;
+		display: block;
+		width: 30px;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		transition: all 500ms ease-out;
+	}
 }
 
-.parallax {
-
+.topBurg {
+	top: 3px;
+	transform: rotate(0);
 }
 
-.carousel {
+.midBurg {
+	top: 12px;
+}
 
+.botBurg {
+	top: 21px;
+	transform: rotate(0);
+}
+
+.nav-toggle.open {
+	.topBurg {
+		top: 12px;
+		transform: rotate(45deg);
+	}
+	.midBurg {
+		left: 50%;
+		width: 1px;
+	}
+	.botBurg {
+		top: 12px;
+		transform: rotate(-45deg);
+	}
 }
 
 @media screen and (max-width: 640px) {
+	.header-logo {
+		height: 5em;
+	}
 	.masthead {
-		 nav {
+		position: fixed;
+		z-index: 1000;
+		nav {
 			background: rgba(#000, 0.5);
 			bottom: 0;
 			display: none;

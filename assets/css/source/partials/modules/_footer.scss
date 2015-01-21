@@ -1,3 +1,7 @@
+footer {
+	width: 100%;
+}
+
 footer nav {
 	list-style: none;
 }
@@ -28,4 +32,13 @@ footer a:hover {
 
 .ff-credit a:hover {
 	color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+	footer {
+		.col-1-4 {
+			text-align: center;
+			width: 100%;
+		}
+	}
 }

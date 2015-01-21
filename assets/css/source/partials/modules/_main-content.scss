@@ -1,9 +1,46 @@
+.hero {
+	@include clearfix;
+	background-position: center;
+	background-size: cover;
+	padding: 15em 0 16em 0;
+	h1 {
+		color: #fff;
+		font-size: 3em;
+		font-family: $garamond;
+		font-weight: bold;
+		text-align: center;
+		@include text-shadow(0 1px 1px #000); 
+		font-variant: small-caps;	
+		padding: 0 6em;
+		text-transform: none;
+	}
+	width: 100%;
+}
+
+
+body.home .hero, body.home .family-member {
+	background-attachment: fixed!important;
+}
+
+
+.parallax {
+
+}
+
+.carousel {
+
+}
+
+.page-wrap {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
 .page-header {
 
 }
 
 .page-content {
-	margin: 0 0 2em 0;
 }
 
 // POST CONTENT STYLES
@@ -40,4 +77,17 @@
 
 .tags a {
 
+}
+
+@media screen and (max-width: 640px) {
+	#main {
+		padding-top: 5em;
+	}
+	.hero {
+		padding: 7em 0 8em 0;
+	}
+	.page-wrap {
+		padding-bottom: 1.5em;
+		padding-top: 1.5em;
+	}
 }

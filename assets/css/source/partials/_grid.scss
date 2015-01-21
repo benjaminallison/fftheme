@@ -9,6 +9,7 @@
 
 .section-block {
 	@include clearfix;
+	clear: both;
 }
 
 .container {
