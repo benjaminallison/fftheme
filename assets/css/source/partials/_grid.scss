@@ -15,10 +15,11 @@
 .container {
 	@include box-sizing(border-box);
 	@include clearfix;
-	margin: 0 auto;
 	@extend %gutters;
+	margin: 0 auto;
+	max-width: $pageWidth;
 	position: relative;
-	width: $pageWidth;
+	width: 100%;
 }
 
 .row {
