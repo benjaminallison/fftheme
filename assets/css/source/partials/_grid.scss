@@ -32,18 +32,6 @@
 	@extend %gutters;
 }
 
-.col-right {
-	float: right;
-}
-
-.col-left {
-	float: right;
-}
-
-.col-center {
-	margin: 0 auto;
-}
-
 .col-full {
 	@include column;
 	width: 100%
@@ -102,4 +90,17 @@
 .col-1-12 {
 	@include column;
 	width: 8.333%;
+}
+
+.col-right {
+	float: right;
+}
+
+.col-left {
+	float: right;
+}
+
+.col-center {
+	float: none;
+	margin: 0 auto;
 }

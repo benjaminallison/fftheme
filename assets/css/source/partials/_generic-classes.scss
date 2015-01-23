@@ -113,6 +113,16 @@
 	font-family: "icomoon";
 }
 
+.parallax {
+	background-position: center!important;
+	background-size: cover!important;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
 
 // PROPORTIONAL DIVS
 
