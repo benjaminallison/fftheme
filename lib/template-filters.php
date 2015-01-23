@@ -41,26 +41,35 @@
 	function my_wp_nav_menu_objects_sub_menu( $sorted_menu_items, $args ) {
 		if ( isset( $args->sub_menu ) ) {
 			$root_id = 0;
-			
-			// find the current menu item
-			foreach ( $sorted_menu_items as $menu_item ) {
-				if ( $menu_item->current ) {
-					// set the root id based on whether the current menu item has a parent or not
-					$root_id = ( $menu_item->menu_item_parent ) ? $menu_item->menu_item_parent : $menu_item->ID;
-					break;
+
+			if ( $args->page_id ) {
+				foreach ( $sorted_menu_items as $menu_item ) {
+					if ( $menu_item->object_id == $args->page_id ) {
+						$root_id = $menu_item->ID;
+						break;
+					}
 				}
-			}
-			
-			// find the top level parent
-			if ( ! isset( $args->direct_parent ) ) {
-				$prev_root_id = $root_id;
-				while ( $prev_root_id != 0 ) {
-					foreach ( $sorted_menu_items as $menu_item ) {
-						if ( $menu_item->ID == $prev_root_id ) {
-							$prev_root_id = $menu_item->menu_item_parent;
-							// don't set the root_id to 0 if we've reached the top of the menu
-							if ( $prev_root_id != 0 ) $root_id = $menu_item->menu_item_parent;
-							break;
+			} else {
+				// find the current menu item
+				foreach ( $sorted_menu_items as $menu_item ) {
+					if ( $menu_item->current ) {
+						// set the root id based on whether the current menu item has a parent or not
+						$root_id = ( $menu_item->menu_item_parent ) ? $menu_item->menu_item_parent : $menu_item->ID;
+						break;
+					}
+				}
+				
+				// find the top level parent
+				if ( ! isset( $args->direct_parent ) ) {
+					$prev_root_id = $root_id;
+					while ( $prev_root_id != 0 ) {
+						foreach ( $sorted_menu_items as $menu_item ) {
+							if ( $menu_item->ID == $prev_root_id ) {
+								$prev_root_id = $menu_item->menu_item_parent;
+								// don't set the root_id to 0 if we've reached the top of the menu
+								if ( $prev_root_id != 0 ) $root_id = $menu_item->menu_item_parent;
+								break;
+							}
 						}
 					}
 				}

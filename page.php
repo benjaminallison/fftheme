@@ -3,18 +3,14 @@
 		<?php get_template_part("content", "hero");?>
 		<div class="page-wrap container">
 			<?php get_sidebar("left"); ?>
-			<article id="content" class="col-half gutter-pad">
-				<div class="inner-wrap">
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'content', 'page' ); ?>
-						<?php
-							// if ( comments_open() || get_comments_number() ) :
-							// 	comments_template();
-							// endif;
-						?>
-					<?php endwhile; ?>
-				</div>
-			</article>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content', 'page' ); ?>
+					<?php
+						// if ( comments_open() || get_comments_number() ) :
+						// 	comments_template();
+						// endif;
+					?>
+				<?php endwhile; ?>
 			<?php get_sidebar("right"); ?>
 		</div>
 	</main><!-- #main -->

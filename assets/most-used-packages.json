@@ -7,8 +7,8 @@
 	"jquery.scrollTo":  "*",
 	"waitForImages": ">2.x",
 	"history.js" : ">1.x",
-	"jsviews" : ">1.x",
-	// "jsrender", : "~1.3"
+	"handlebars" : ">2.0.0",
 	"jquery-scrollstop": ">1.x",
-	"jquery.lazyload": ">1.x"
+	"jquery.lazyload": ">1.x",
+	"jQuery-Touch-Events": "benmajor/jQuery-Touch-Events"
 }
