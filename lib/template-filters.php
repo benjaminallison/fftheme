@@ -24,7 +24,14 @@
 		return $title;
 	}
 	add_filter( 'wp_title', 'my_wp_title', 10, 2 );
-	
+
+	function body_ID() {
+		global $post;
+		if ( $post ) {
+			return 'id="'.$post->post_name.'"';
+		}
+	} 	
+
 	function body_classes( $classes ) {
 		global $post;
 		if ( $post ) {
@@ -33,6 +40,21 @@
 				$classes[] = $post->post_type;
 			}
 		}
+
+		if ( function_exists("wpmd_is_device") ) {
+			if ( wpmd_is_device() ) {
+				$classes[] = "mobile-device";
+				if ( wpmd_is_tablet() ) {
+					$classes[] = " tablet-device";
+				}
+				if ( wpmd_is_phone() ) {
+					$classes[] = "phone-device";
+				}
+			} else {
+				$classes[] = "desktop-device";
+			}
+		}
+
 		return $classes;
 	}
 	add_filter( 'body_class', 'body_classes' );

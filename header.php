@@ -19,6 +19,6 @@
 		-->
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class() ?>>
+	<body <?php body_ID(); ?> <?php body_class(); ?>>
 		<div id="page">
 			<?php get_template_part("header", "masthead"); ?>

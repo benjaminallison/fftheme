@@ -52,8 +52,8 @@
 	}
 
 function get_rotated_hero($postID, $thumbSize) {
-	$hero = wp_get_attachment_image_src(get_post_thumbnail_id($postID), $thumbSize)[0];
-	$hero = pathinfo($hero);
+	$hero = wp_get_attachment_image_src(get_post_thumbnail_id($postID), $thumbSize);
+	$hero = pathinfo($hero[0]);
 	$heroURL = $hero["dirname"] . "/" . $hero["filename"] . "-rotated." . $hero["extension"];
 	return $heroURL;
 }
