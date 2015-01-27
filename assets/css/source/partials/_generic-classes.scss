@@ -99,7 +99,7 @@
 	padding: 1em;
 	text-align: center;
 	text-decoration: none;
-	@include transition(0.5s);
+	@include transition(color 0.25s, opacity 0.25s);
 }
 
 .button:hover {

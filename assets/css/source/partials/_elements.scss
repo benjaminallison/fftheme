@@ -37,7 +37,7 @@ p {
 }
 
 a {
-	@include transition(0.5s);
+	@include transition(color 0.25s, opacity 0.25s);
 }
 
 a:hover {
@@ -52,7 +52,7 @@ hr {
 input, textarea {
 	background: #eee;
 	padding: 1em;
-	@include transition(0.5s);
+	@include transition(color 0.25s, background 0.25s);
 }
 
 input:focus, textarea:focus {
