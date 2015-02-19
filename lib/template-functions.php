@@ -11,3 +11,19 @@
 			return false;
 		}
 	}
+
+	function getGrandparent($id = null) {
+		global $post;
+		if ($id === null ) {
+			$id = $post->ID;
+		} else {
+			$post = get_post($id);
+		}
+		if ( $post->post_parent ) {
+			$parentData = get_post($post->post_parent);
+			if ( $parentData->post_parent ) {
+				return $parentData->post_parent;;
+			}
+		}
+		return false;
+	}

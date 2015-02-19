@@ -1,5 +1,4 @@
 <?php
-
 	function my_wp_title( $title, $sep ) {
 		if ( is_feed() ) {
 			return $title;
@@ -18,19 +17,26 @@
 	
 		// Add a page number if necessary:
 		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'izcorp' ), max( $paged, $page ) );
+			$title .= " $sep " . sprintf( __( 'Page %s', 'adsdf' ), max( $paged, $page ) );
 		}
 	
 		return $title;
 	}
 	add_filter( 'wp_title', 'my_wp_title', 10, 2 );
+	
+	function render_my_wp_title() {
+		?>
+		<title><?php wp_title( '|', true, 'right' ); ?></title>
+		<?php
+	}
+	add_action( 'wp_head', 'render_my_wp_title' );
 
 	function body_ID() {
 		global $post;
 		if ( $post ) {
 			return 'id="'.$post->post_name.'"';
 		}
-	} 	
+	} 
 
 	function body_classes( $classes ) {
 		global $post;
@@ -64,7 +70,7 @@
 		if ( isset( $args->sub_menu ) ) {
 			$root_id = 0;
 
-			if ( $args->page_id ) {
+			if ( isset($args->page_id) ) {
 				foreach ( $sorted_menu_items as $menu_item ) {
 					if ( $menu_item->object_id == $args->page_id ) {
 						$root_id = $menu_item->ID;
