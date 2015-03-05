@@ -13,3 +13,5 @@
 	include(dirname(__FILE__) . '/lib/taxonomy-init.php');
 	include(dirname(__FILE__) . '/lib/auto-install-plugins.php');
 	include(dirname(__FILE__) . '/lib/images-rotate-on-upload.php');
+	// include(dirname(__FILE__) . '/lib/admin-options.php');
+	// add_filter('show_admin_bar', '__return_false');

@@ -63,11 +63,6 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'Shortcode Menu',
-				'slug'	=> 'shortcode-menu',
-				'required'	=> true
-			),
-			array(
 				'name'		=> 'WP DB Sync',
 				'slug'		=> 'wp-db-sync',
 				'source'	=> 'https://github.com/wp-sync-db/wp-sync-db/archive/master.zip',

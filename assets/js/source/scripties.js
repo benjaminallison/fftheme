@@ -37,8 +37,8 @@ jQuery(document).ready(function($) {
 	$(document).keydown(function(e) {
 		if (e.which === 27) {
 			e.preventDefault();
-			closeMenu();
-			$("nav").animate({ left: "100%" }, 500, "easeInOutExpo");
+			$("#nav-toggle").removeClass("open");
+			$(".mobile-nav").removeClass("open");
 		}
 	});
 

@@ -11,7 +11,7 @@
 	) );
 
 	// register_nav_menus( array(
-	// 	'primary-menu' => __( 'Main Menu', 'main-menu' ),
+	// 	'main-menu' => __( 'Main Menu', 'main-menu' ),
 	// 	'left-menu' => __( 'Left Menu', 'left-menu' ),
 	// 	'right-menu' => __( 'Right Menu', 'right-menu' ),
 	// 	'footer-menu' => __( 'Footer Menu', 'footer-menu' ),
