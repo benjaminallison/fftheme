@@ -20,8 +20,11 @@
 // WORDPRESS CLASSES
 @import "partials/wordpress-classes.scss";
 
-// GENERIC CLASSES
-@import "partials/generic-classes.scss";
+// COMMON CLASSES
+@import "partials/common-classes.scss";
+
+// SPECIFIC CLASSES
+@import "partials/specific-classes.scss";
 
 // COLUMN CLASSES
 @import "partials/grid.scss";

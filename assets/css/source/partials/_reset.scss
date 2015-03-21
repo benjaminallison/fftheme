@@ -21,6 +21,10 @@ section, summary, time, mark, audio, video {
 	@include box-sizing(inherit);
 }
 
+html, body {
+	height: 100%;
+}
+
 html {
 	overflow-y: scroll;
 }

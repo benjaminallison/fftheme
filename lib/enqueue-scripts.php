@@ -6,7 +6,7 @@
 		wp_enqueue_script( '<%= conf.get('themeDir') %>-scripts' );
 
 		if (in_array($_SERVER['SERVER_NAME'], array('<%= conf.get('themeDir') %>.local'))) {
-			wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
+			wp_register_script('livereload', '//localhost:35729/livereload.js?snipver=1', null, false, true);
 			wp_enqueue_script('livereload');
 		}
 

@@ -19,40 +19,26 @@ jQuery(document).ready(function($) {
 	function windowResizeBehaviour() {
 	}
 
-	// mobile menu toggle
-	var menuStatus = "closed";
-
-	function openMenu() {
-		menuStatus = "open";
-		$("body").addClass("no-scroll");
-		$("#nav-toggle").addClass("open");
-		$("nav").addClass("open");
-	}
-
-	function closeMenu() {
-		menuStatus = "closed";
-		$("body").removeClass("no-scroll");
-		$("#nav-toggle").removeClass("open");
-		$("nav").removeClass("open");
-	}
-
-	$("#nav-toggle").click(function(){
-		if (menuStatus === "closed") {
-			openMenu();
-			$("nav").animate({ left: 0 }, 500, "easeInOutExpo");
-		} else {
-			closeMenu();
-			$("nav").animate({ left: "100%" }, 500, "easeInOutExpo");
-		}
+	$("#nav-toggle").on("click", function(){
+		$("#nav-toggle").toggleClass("open");
+		$(".mobile-nav").toggleClass("open");
 	});
 
-	$("#header").centredParallax($.mobileBreakPoint);
+	$(".menu-item-has-children").append('<span class="sub-menu-expand"></span>');
+
+	$(".menu-item-has-children .sub-menu-expand").on("click", function(){
+		$(this).parent().toggleClass("expanded");
+	});
+
+	if ( $("body").hasClass("desktop-device") ) {
+		$(".parallax").simpleParallax(0.5, $.mobileBreakPoint);
+	}
 
 	$(document).keydown(function(e) {
 		if (e.which === 27) {
 			e.preventDefault();
-			closeMenu();
-			$("nav").animate({ left: "100%" }, 500, "easeInOutExpo");
+			$("#nav-toggle").removeClass("open");
+			$(".mobile-nav").removeClass("open");
 		}
 	});
 

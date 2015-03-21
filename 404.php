@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<main id="main">
-		<?php get_template_part("content", "hero");?>
+		<?php get_template_part("partials/content", "hero");?>
 		<?php get_sidebar("left"); ?>
 		<article id="content" class="col-half error-404 not-found">
 			<header class="page-header">

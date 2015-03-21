@@ -6,13 +6,12 @@
 	add_theme_support( 'menus' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support('post-thumbnails');
-	add_theme_support( 'title-tag' );
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
 
 	// register_nav_menus( array(
-	// 	'primary-menu' => __( 'Main Menu', 'main-menu' ),
+	// 	'main-menu' => __( 'Main Menu', 'main-menu' ),
 	// 	'left-menu' => __( 'Left Menu', 'left-menu' ),
 	// 	'right-menu' => __( 'Right Menu', 'right-menu' ),
 	// 	'footer-menu' => __( 'Footer Menu', 'footer-menu' ),
@@ -40,6 +39,12 @@
 	}
 	add_action( 'widgets_init', 'ffcc_widgets_init' );
 
+	add_image_size( '2x1-small', 150, 75, true );
+	add_image_size( '2x1-medium', 600, 300, true );
+	add_image_size( '2x1-large', 1200, 600, true );
+	add_image_size( '1x2-small', 75, 150, true );
+	add_image_size( '1x2-medium', 300, 600, true );
+	add_image_size( '1x2-large', 600, 1200, true );
 	add_image_size( '16x9-small', 150, 84, true );
 	add_image_size( '16x9-medium', 600, 336, true );
 	add_image_size( '16x9-large', 1200, 675, true );

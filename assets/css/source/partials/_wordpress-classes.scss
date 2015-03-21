@@ -4,13 +4,11 @@
 }
 
 .alignleft {
-	text-align: left;
-	float: left;
+	float: left!important;
 }
 
 .alignright {
-	text-align: right;
-	float: right;
+	float: right!important;
 }
 
 .wp-caption {
@@ -30,4 +28,22 @@
 
 .bypostauthor {
 
+}
+
+.edit-link {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	.post-edit-link {
+		display: inline-block;
+		color: #fff;
+		background: #1ac;
+		@include border-radius(0.25em);
+		padding: 1em;
+		text-decoration: none;
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
+	}
 }
