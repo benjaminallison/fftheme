@@ -1,3 +1,5 @@
+/*global ScrollMagic:true, ScrollScene:true, TweenMax */
+
 jQuery(document).ready(function($) {
 	window.scrollTo(0, 1);
 	$.windowWidth = 34;

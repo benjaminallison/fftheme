@@ -9,8 +9,9 @@
 	@include transition(color 0.25s, background 0.25s, opacity 0.25s);
 	&:hover {
 		background: $grey;
-		color: $cream;
+		color: $white;
 	}
+}
 
 .button-icon {
 	font-size: 1.5em;

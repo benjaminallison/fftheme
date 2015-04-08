@@ -38,27 +38,29 @@ p {
 
 a {
 	@include transition(color 0.25s, opacity 0.25s);
-}
-
-a:hover {
-	color: #fff;
-	background: #737b35;
+	text-decoration: none;
+	&:hover {
+		color: #d20;
+	}
 }
 
 hr {
 
 }
 
+img {
+	height: auto;
+	@include transition(opacity 0.25s);
+}
+
 input, textarea {
 	background: #eee;
 	padding: 1em;
-	@include transition(color 0.25s, background 0.25s);
-}
-
-input:focus, textarea:focus {
-	color: #fff;
-	background: #aa860b;
-}
+	@include transition(all 0.375s);
+	&:focus {
+		color: #d20;
+		background: #aa860b;
+	}
 
 input {
 	@include input-placeholder {

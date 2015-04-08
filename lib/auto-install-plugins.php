@@ -7,6 +7,16 @@
 
 		$plugins = array(
 			array(
+				'name'	=> 'W3 Total Cache',
+				'slug'	=> 'w3-total-cache',
+				'required'	=> true
+			),
+			array(
+				'name'	=> 'Yoast',
+				'slug'	=> 'wordpress-seo',
+				'required'	=> true
+			),
+			array(
 				'name'	=> 'Duplicator',
 				'slug'	=> 'duplicator',
 				'required'	=> true
@@ -63,9 +73,30 @@
 				'required'	=> true
 			),
 			array(
+				'name'	=> 'Enable Media Replace',
+				'slug'	=> 'enable-media-replace',
+				'required'	=> true
+			),
+			array(
+				'name'	=> 'Simple 301 Redirects',
+				'slug'	=> 'simple-301-redirects',
+				'required'	=> true
+			),
+			array(
+				'name'	=> 'Mailchimp for WP',
+				'slug'	=> 'mailchimp-for-wp',
+				'required'	=> true
+			),
+			array(
 				'name'		=> 'WP DB Sync',
 				'slug'		=> 'wp-db-sync',
 				'source'	=> 'https://github.com/wp-sync-db/wp-sync-db/archive/master.zip',
+				'required'	=> true
+			),
+			array(
+				'name'		=> 'WP DB Sync Media Files',
+				'slug'		=> 'wp-sync-db-media-files',
+				'source'	=> 'https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip',
 				'required'	=> true
 			),
 			array(
@@ -74,6 +105,18 @@
 				'source'	=> get_stylesheet_directory() . '/lib/vendor/firefly-trade-media.zip',
 				'required'	=> true
 			),
+			array(
+				'name'		=> 'Advanced Custom Post Order',
+				'slug'		=> 'advanced-post-types-order',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/advanced-post-types-order.zip',
+				'required'	=> true
+			),
+			array(
+				'name'		=> 'Video User Manuals',
+				'slug'		=> 'video-user-manuals',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/video-user-manuals.zip',
+				'required'	=> true
+			)
 		);
 	
 		$config = array(

@@ -10,5 +10,6 @@
 	"handlebars" : ">2.0.0",
 	"jquery-scrollstop": ">1.x",
 	"jquery.lazyload": ">1.x",
-	"jQuery-Touch-Events": "benmajor/jQuery-Touch-Events"
+	"jQuery-Touch-Events": "benmajor/jQuery-Touch-Events",
+	"modernizr" : "*"
 }

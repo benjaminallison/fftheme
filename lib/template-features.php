@@ -60,3 +60,14 @@
 	add_image_size( 'natural-small', 150, 150, false );
 	add_image_size( 'natural-medium', 600, 600, false );
 	add_image_size( 'natural-large', 1200, 1200, false );
+
+	function set_permalink(){
+		global $wp_rewrite;
+		$wp_rewrite->set_permalink_structure('/%postname%/');
+	}
+	add_action('after_switch_theme', 'set_permalink');
+
+	function theme_editor_styles() {
+		add_editor_style( 'assets/css/build/editor-style.css' );
+	}
+	add_action( 'admin_init', 'theme_editor_styles' );
