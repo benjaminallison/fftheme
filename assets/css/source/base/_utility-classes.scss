@@ -28,43 +28,6 @@
 	display: none!important;
 }
 
-.menu, .sub-menu {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.proportional-wrap {
-	height: 0;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-	
-	&.four-by-three {
-		padding-top: 75%;
-	}
-	
-	&.three-by-two {
-		padding-top: 66.666%;
-	}
-	
-	&.sixteen-by-nine {
-		padding-top: 56.25%;
-	}
-	
-	&.two-by-one {
-		padding-top: 50%;
-	}
-
-	.proportional-inner {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-}
-
 @media screen and (max-width: 640px) {
 	.mobile-hide {
 		display: none!important;

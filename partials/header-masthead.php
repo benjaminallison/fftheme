@@ -22,10 +22,10 @@
 		<button id="nav-toggle" class="button nav-toggle">
 			<!-- <span class="icon button-icon icon-bars nav-open"></span>
 			<span class="icon button-icon icon-close nav-close"></span> -->
-			<div class="menuBurg">
-				<span class="burgLine topBurg"></span>
-				<span class="burgLine midBurg"></span>
-				<span class="burgLine botBurg"></span>
+			<div class="toggle-icon">
+				<span class="toggle-icon-line top-line"></span>
+				<span class="toggle-icon-line mid-line"></span>
+				<span class="toggle-icon-line bot-line"></span>
 			</div>
 		</button>
 	</div>

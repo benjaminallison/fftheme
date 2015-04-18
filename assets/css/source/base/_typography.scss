@@ -1,33 +1,29 @@
-body {
-	
-}
-
-h1 {
+.h1 {
 	font-size: 2em;
 	font-weight: bold;
 }
 
-h2 {
+.h2 {
 	font-size: 1.75em;
 	font-weight: bold;
 }
 
-h3 {
+.h3 {
 	font-size: 1.25em;
 	font-weight: bold;
 }
 
-h4 {
+.h4 {
 	font-size: 1em;
 	font-weight: bold;
 }
 
-h5 {
+.h5 {
 	font-size: 1em;
 	font-weight: italic;
 }
 
-h6 {
+.h6 {
 	font-size: 0.875em;
 	font-weight: bold;
 }
@@ -51,21 +47,4 @@ hr {
 img {
 	height: auto;
 	@include transition(opacity 0.25s);
-}
-
-input, textarea {
-	background: #eee;
-	padding: 1em;
-	@include transition(all 0.375s);
-	&:focus {
-		color: #d20;
-		background: #aa860b;
-	}
-}
-
-input {
-	@include input-placeholder {
-		color: #666;
-		font-style: italic;
-	}
 }

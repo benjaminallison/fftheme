@@ -2,29 +2,15 @@
 @import "compass";
 @import "helpers/helpers";
 
-// BASE DECLARATIONS
-@import "base/base";
-@import "base/variables";
 @import "base/reset";
-@import "base/elements";
+@import "base/base";
 @import "base/wp-classes";
+@import "base/utility-classes";
 
 @import "layout/grid";
+@import "layout/header";
+@import "layout/page";
+@import "layout/sidebar";
+@import "layout/footer";
 
-// @import "partials/common-classes";
-// @import "partials/classes";
-
-// MODULES
-// @import "partials/modules/header";
-// @import "partials/modules/main-content";
-// @import "partials/modules/carousel";
-// @import "partials/modules/accordion";
-// @import "partials/modules/wines";
-// @import "partials/modules/reviews";
-// @import "partials/modules/recipes";
-// @import "partials/modules/video";
-// @import "partials/modules/sidebar";
-// @import "partials/modules/footer";
-
-// MEDIA QUERIES
-// @import "partials/_media-queries";
+@import "base/typography";
