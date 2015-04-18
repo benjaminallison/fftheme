@@ -61,6 +61,7 @@ input, textarea {
 		color: #d20;
 		background: #aa860b;
 	}
+}
 
 input {
 	@include input-placeholder {

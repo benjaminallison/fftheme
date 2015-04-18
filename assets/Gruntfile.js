@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 				],
 				options: {
 					livereload: 35729
-				}
+				},
 				tasks: ['jshint', 'uglify']
 			},
 			php: {
@@ -109,20 +109,20 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		// imagemin: {                          // Task
-		// 	dynamic: {
-		// 		options: {                       // Target options
-		// 			optimizationLevel: 3,
-		// 			svgoPlugins: [{ removeViewBox: false }]
-		// 		},
-		// 		files: [{
-		// 			expand: true,                  // Enable dynamic expansion
-		// 			cwd: 'src/',                   // Src matches are relative to this path
-		// 			src: ['images/*.{png,jpg,gif}'],   // Actual patterns to match
-		// 			dest: 'images/compressed/'                  // Destination path prefix
-		// 		}]
-		// 	}
-		// }
+		//imagemin: {                          // Task
+		//	dynamic: {
+		//		options: {                       // Target options
+		//			optimizationLevel: 3,
+		//			svgoPlugins: [{ removeViewBox: false }]
+		//		},
+		//		files: [{
+		//			expand: true,                  // Enable dynamic expansion
+		//			cwd: 'src/',                   // Src matches are relative to this path
+		//			src: ['images/*.{png,jpg,gif}'],   // Actual patterns to match
+		//			dest: 'images/compressed/'                  // Destination path prefix
+		//		}]
+		//	}
+		//}
 	});
 
 	// load tasks

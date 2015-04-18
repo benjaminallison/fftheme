@@ -17,16 +17,17 @@ section, summary, time, mark, audio, video {
 	text-align: inherit;
 }
 
+html {
+	@include box-sizing(border-box);
+	overflow-y: scroll;
+}
+
 *, *:before, *:after {
-	@include box-sizing(inherit);
+  box-sizing: inherit;
 }
 
 html, body {
 	height: 100%;
-}
-
-html {
-	overflow-y: scroll;
 }
 
 body {
@@ -53,16 +54,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 blockquote, q {
 	quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: none;
+	&:before, &:after {
+		content: none;
+	}
 }
 
 button, input, select, textarea {
 	border: none;
 	@include border-radius(0);
-	@include box-sizing(border-box);
 	display: block;
 	font-family: inherit;
 	font-size: inherit;
@@ -70,13 +69,9 @@ button, input, select, textarea {
 	width: auto;
 }
 
-button, input[type=button], input[type=submit] {
-	overflow: visible;
-	-webkit-appearance: none;
-}
-
 button, label, input[type=button], input[type=submit], input[type=file] {
 	cursor: pointer;
+	-webkit-appearance: none;
 }
 
 del {
