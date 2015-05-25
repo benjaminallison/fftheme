@@ -2,8 +2,6 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
 		<meta name="author" content="Designed and coded by Firefly Creative Company: http://fireflycompany.com">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
