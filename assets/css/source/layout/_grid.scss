@@ -96,29 +96,31 @@
 	margin: 0 auto;
 }
 
-.proportional-wrap {
-	height: 0;
+.proportional_wrap {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	
-	&.four-by-three {
-		padding-top: 75%;
+	.proportional_outer {
+		height: 0;
+		position: relative;
+		width: 100%;
+		&.four_by_three {
+			padding-top: 75%;
+		}
+		
+		&.three_by_two {
+			padding-top: 66.666%;
+		}
+		
+		&.sixteen_by_nine {
+			padding-top: 56.25%;
+		}
+		
+		&.two_by_one {
+			padding-top: 50%;
+		}
 	}
-	
-	&.three-by-two {
-		padding-top: 66.666%;
-	}
-	
-	&.sixteen-by-nine {
-		padding-top: 56.25%;
-	}
-	
-	&.two-by-one {
-		padding-top: 50%;
-	}
-
-	.proportional-inner {
+	.proportional_inner {
 		height: 100%;
 		left: 0;
 		position: absolute;

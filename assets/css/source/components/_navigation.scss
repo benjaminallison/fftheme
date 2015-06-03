@@ -90,19 +90,20 @@
 	&:hover {
 	}
 	&.open {
-	background: $fff;
-	.toggle-icon-line {
-		&.top-line {
-			top: 12px;
-			@include transform(rotate(45deg));
-		}
-		&.mid-line {
-			left: 50%;
-			width: 1px;
-		}
-		&.bot-line {
-			top: 12px;
-			@include transform(rotate(-45deg));
+		background: $fff;
+		.toggle-icon-line {
+			&.top-line {
+				top: 12px;
+				@include transform(rotate(45deg));
+			}
+			&.mid-line {
+				left: 50%;
+				width: 1px;
+			}
+			&.bot-line {
+				top: 12px;
+				@include transform(rotate(-45deg));
+			}
 		}
 	}
 }
