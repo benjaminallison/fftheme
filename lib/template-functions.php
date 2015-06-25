@@ -29,9 +29,7 @@
 	}
 
 	function topLevelParent() {
-
-		$cptOverride = array(
-		);
+		$cptOverride = array();
 
 		global $post;
 		$postToQuery = $post->ID;
