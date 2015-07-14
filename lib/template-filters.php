@@ -76,20 +76,46 @@
 	}
 	add_filter( 'pre_get_posts', 'cpt_search' );
 
+	function specify_current_page( $sorted_menu_items, $args ) {
+		if ( isset( $args->current) ) {
+			foreach($sorted_menu_items as $key => $val) {
+				if ($sorted_menu_items[$key]->object_id == $args->current ) {
+					$sorted_menu_items[$key]->current = 1;
+					$sorted_menu_items[$key]->classes[] = "current-menu-item";
+					$sorted_menu_items[$key]->classes[] = "page_item";
+					$sorted_menu_items[$key]->classes[] = "current_page_item";
+				}
+			}
+		}
+		return $sorted_menu_items;
+	}
+	add_filter( 'wp_nav_menu_objects', 'specify_current_page', 10, 2 );
 
+	function add_current_class_to_posts_page( $classes, $item ) {
+		static $posts_page;
+	
+		if ( ! is_single() )
+			return $classes;
+	
+		if ( ! isset( $posts_page ) )
+			$posts_page = get_option( 'page_for_posts' ); // cache as we may be calling this a lot!
+	
+		if ( $item->object == 'page' && $item->object_id == $posts_page )
+			$classes[] = 'current_page_item'; // this is the posts page!
+	
+		return $classes;
+	}
+	add_filter( 'nav_menu_css_class', 'add_current_class_to_posts_page', 10, 2 );
 
 	// filter_hook function to react on sub_menu flag
 	function my_wp_nav_menu_objects_sub_menu( $sorted_menu_items, $args ) {
 		if ( isset( $args->sub_menu ) ) {
 			$root_id = 0;
-
-			if ( isset($args->page_id) ) {
-				foreach ( $sorted_menu_items as $menu_item ) {
-					if ( $menu_item->object_id == $args->page_id ) {
-						$root_id = $menu_item->ID;
-						break;
-					}
-				}
+			// if string, parent has been specified...
+			if ( is_string($args->sub_menu) ) {
+				$ids = wp_filter_object_list( $sorted_menu_items, array( 'post_title' => $args->sub_menu ) );
+				$nav_item = array_pop( $ids );
+				$root_id = $nav_item->ID;
 			} else {
 				// find the current menu item
 				foreach ( $sorted_menu_items as $menu_item ) {
@@ -120,15 +146,17 @@
 			foreach ( $sorted_menu_items as $key => $item ) {
 				// init menu_item_parents
 				if ( $item->ID == $root_id ) $menu_item_parents[] = $item->ID;
+		
 				if ( in_array( $item->menu_item_parent, $menu_item_parents ) ) {
 					// part of sub-tree: keep!
 					$menu_item_parents[] = $item->ID;
-					} else if ( ! ( isset( $args->show_parent ) && in_array( $item->ID, $menu_item_parents ) ) ) {
+				} else if ( ! ( isset( $args->show_parent ) && in_array( $item->ID, $menu_item_parents ) ) ) {
 					// not part of sub-tree: away with it!
 					unset( $sorted_menu_items[$key] );
 				}
 			}
 			
+			// prd($sorted_menu_items);
 			return $sorted_menu_items;
 		} else {
 			return $sorted_menu_items;
