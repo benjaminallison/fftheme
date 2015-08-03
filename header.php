@@ -19,4 +19,4 @@
 	</head>
 	<body <?php body_ID(); ?> <?php body_class(); ?>>
 		<div id="page" class="page-wrap">
-			<?php get_template_part("partials/header", "masthead"); ?>
+			<?php get_template_part("partials/header", "content"); ?>

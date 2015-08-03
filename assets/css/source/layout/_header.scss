@@ -1,19 +1,16 @@
+.page_header {
+}
+
 .header-logo {
 
 }
 
-.masthead {
-	background-color: #020;
-	width: 100%;
-}
-
-
 @media screen and (max-width: 640px) {
-	.header-logo {
-		height: 5em;
-	}
-	.masthead {
+	.page_header {
 		position: fixed;
 		z-index: 1000;
+	}
+	.header-logo {
+		height: 5em;
 	}
 }

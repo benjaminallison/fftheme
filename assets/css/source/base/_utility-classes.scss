@@ -1,9 +1,9 @@
-.full-height {
+.full_height {
 	height: 100%;
 	width: auto;
 }
 
-.full-width {
+.full_width {
 	height: auto;
 	width: 100%;
 }
@@ -12,28 +12,52 @@
 	background-size: 100% auto!important;
 }
 
-.bg-tall {
+.bg_tall {
 	background-size: auto 100%!important;
 }
 
-.no-scroll {
+.no_scroll {
 	overflow: hidden;
 }
 
-.mobile-hide {
+.mobile_hide {
 	display: inherit!important;
 }
 
-.desktop-hide {
+.desktop_hide {
 	display: none!important;
 }
 
+.centred {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	@include transform(translate(-50%,-50%));
+}
+
+.centred_vert {
+	position: absolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+
+.centred_title {
+	@extend .centred;
+	display: inline-block;
+	text-align: center;
+}
+
+.bg_cover {
+	background-position: center center!important;
+	background-size: cover!important;
+}
+
 @media screen and (max-width: 640px) {
-	.mobile-hide {
+	.mobile_hide {
 		display: none!important;
 	}
 
-	.desktop-hide {
+	.desktop_hide {
 		display: inherit!important;
 	}
 }

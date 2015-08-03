@@ -45,9 +45,10 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'js/build/vendor.min.js': [
+						'js/vendor/smart-resize.js',
 						//'js/vendor/gsap/src/minified/TweenMax.min.js',
 						//'js/vendor/ScrollMagic/js/jquery.scrollmagic.min.js',
-						'js/vendor/fancybox/source/jquery.fancybox.pack.js',
+						// 'js/vendor/fancybox/source/jquery.fancybox.pack.js',
 						// 'js/vendor/jquery-hoverIntent/jquery.hoverIntent.js',
 						// 'js/vendor/jquery.scrollTo/jquery.scrollTo.min.js',
 						// 'js/vendor/swipejs/swipe.js',

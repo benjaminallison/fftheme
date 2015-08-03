@@ -1,29 +1,29 @@
-.h1 {
+h1,.h1 {
 	font-size: 2em;
 	font-weight: bold;
 }
 
-.h2 {
+h2,.h2 {
 	font-size: 1.75em;
 	font-weight: bold;
 }
 
-.h3 {
+h3,.h3 {
 	font-size: 1.25em;
 	font-weight: bold;
 }
 
-.h4 {
+h4,.h4 {
 	font-size: 1em;
 	font-weight: bold;
 }
 
-.h5 {
+h5,.h5 {
 	font-size: 1em;
 	font-weight: italic;
 }
 
-.h6 {
+h6,.h6 {
 	font-size: 0.875em;
 	font-weight: bold;
 }
@@ -36,7 +36,6 @@ a {
 	@include transition(color 0.25s, opacity 0.25s);
 	text-decoration: none;
 	&:hover {
-		color: #d20;
 	}
 }
 
@@ -47,4 +46,12 @@ hr {
 img {
 	height: auto;
 	@include transition(opacity 0.25s);
+}
+
+input, textarea {
+	@include transition(all 0.375s);
+}
+
+button {
+	@include transition(all 0.375s);
 }

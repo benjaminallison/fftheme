@@ -1,4 +1,4 @@
-<header id="header" class="masthead centredParallax">
+<header id="header" class="page_header">
 	<div class="container">
 		<nav id="nav" class="col-full">
 			<div class="col-5-12 gutter-pad header-logo">

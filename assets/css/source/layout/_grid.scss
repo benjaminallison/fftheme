@@ -1,10 +1,6 @@
-.page_wrap {
-	min-height: 100%;
-	position: relative;
-}
-
 .container {
 	@include clearfix;
+	clear: both;
 	margin: 0 auto;
 	max-width: $pageWidth;
 	position: relative;
@@ -13,18 +9,22 @@
 
 .row {
 	@include clearfix;
+	clear: both;
+	position: relative;
+	width: 100%;
 }
 
 .gutter_pad {
 	padding: 0 $halfGutter;
 }
 
+.full_pad {
+	padding: $halfGutter;
+}
+
 %column {
 	float: left;
-	@extend .gutter_pad;
-	&:last-of-type {
-		padding-right: 0;
-	}
+	position: relative;
 }
 
 .col_12 {
@@ -103,31 +103,36 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	.proportional_outer {
-		height: 0;
-		position: relative;
-		width: 100%;
-		&.four_by_three {
-			padding-top: 75%;
-		}
-		
-		&.three_by_two {
-			padding-top: 66.666%;
-		}
-		
-		&.sixteen_by_nine {
-			padding-top: 56.25%;
-		}
-		
-		&.two_by_one {
-			padding-top: 50%;
-		}
+}
+
+.proportional_outer {
+	height: 0;
+	position: relative;
+	width: 100%;
+	&.one_by_one {
+		padding-top: 100%;
 	}
-	.proportional_inner {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
+	&.four_by_three {
+		padding-top: 75%;
 	}
+	
+	&.three_by_two {
+		padding-top: 66.666%;
+	}
+	
+	&.sixteen_by_nine {
+		padding-top: 56.25%;
+	}
+	
+	&.two_by_one {
+		padding-top: 50%;
+	}
+}
+
+.proportional_inner {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }

@@ -1,10 +1,7 @@
 input, textarea {
-	background: #eee;
+	background: $white;
 	padding: 1em;
-	@include transition(all 0.375s);
 	&:focus {
-		color: #d20;
-		background: #aa860b;
 	}
 }
 

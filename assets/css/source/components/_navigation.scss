@@ -1,6 +1,7 @@
 .main-menu {
 	@include clearfix;
 	list-style: none;
+	padding: 0;
 	> li {
 		display: inline-block;
 		font-size: 16px; // this overrides the font-size 0 from the equisdistant placement
@@ -9,19 +10,24 @@
 			display: block;
 		}
 		> a {
-			color: #fff;
 			display: block;
-			font-size: 0.875em;
-			letter-spacing: 0.125em;
 			padding: 1em;
 			text-align: center;
 			text-decoration: none;
-			@include text-shadow(0 1px 0 $dark-grey);
 			text-transform: uppercase;
 			&:hover {
-				background: rgba($dark-grey, 0.25);
-				border-bottom: 1px solid $wheat;
 			}
+		}
+	}
+	&.equidistant {
+		font-size: 0.1px;
+		text-align: justify;
+		-ms-text-justify: distribute-all-lines;
+		text-justify: distribute-all-lines;
+		&:after {
+			content: '';
+			width: 100%;
+			display: inline-block!important;
 		}
 	}
 }
@@ -63,13 +69,10 @@
 		padding: 0;
 		position: static;
 		> a {
-			color: #aaa;
 			display: block;
 			padding: 0.5em;
 			text-align: center;
 			&:hover {
-				background: #aaa;
-				color: #000;
 			}
 		}
 	}
@@ -90,7 +93,7 @@
 	&:hover {
 	}
 	&.open {
-		background: $fff;
+		background: #0f0;
 		.toggle-icon-line {
 			&.top-line {
 				top: 12px;
@@ -117,7 +120,7 @@
 }
 
 .toggle-icon-line {
-	background: $dark-grey;
+	background: #f00;
 	display: block;
 	width: 30px;
 	height: 5px;
@@ -153,7 +156,7 @@
 		-webkit-overflow-scrolling: touch;
 	}
 	.mobile-nav {
-		background: darken($dark-grey, 20%);
+		background: darken(#f00, 20%);
 		bottom: 0;
 		display: block;
 		left: 100%;

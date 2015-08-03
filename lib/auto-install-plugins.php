@@ -88,6 +88,11 @@
 				'required'	=> true
 			),
 			array(
+				'name'		=> 'WordPress Backup to Dropbox',
+				'slug'		=> 'wordpress-backup-to-dropbox',
+				'required'	=> true
+			),
+			array(
 				'name'		=> 'WP DB Sync',
 				'slug'		=> 'wp-db-sync',
 				'source'	=> 'https://github.com/wp-sync-db/wp-sync-db/archive/master.zip',

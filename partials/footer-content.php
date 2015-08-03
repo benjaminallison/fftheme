@@ -1,9 +1,9 @@
-<footer id="footer" class="page-footer">
+<footer id="footer" class="page_footer">
 	<div class="container">
-		<nav class="col-half gutter-pad footer-nav">
+		<nav class="col-half gutter-pad footer_nav">
 			<h4>Find your way</h4>
 			<?php $footerMenuParams = array( 'theme_location' => 'footer-menu', 'container' => false, 'items_wrap' => '%3$s' ) ; ?>
-			<ul id="footer-menu" class="footer-menu menu">
+			<ul id="page_footer_menu" class="page_footer_menu menu">
 				<?php wp_nav_menu( $footerMenuParams ); ?>
 			</ul>
 		</nav>

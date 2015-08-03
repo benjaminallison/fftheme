@@ -79,7 +79,3 @@
 		add_editor_style( 'assets/css/build/editor-style.css' );
 	}
 	add_action( 'admin_init', 'theme_editor_styles' );
-
-	if( function_exists('acf_add_options_page') ) {
-		acf_add_options_page();
-	}
