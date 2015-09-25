@@ -39,6 +39,8 @@
 	}
 	add_action( 'widgets_init', 'ffcc_widgets_init' );
 
+	add_editor_style();
+
 	add_image_size( '2x1-small', 150, 75, true );
 	add_image_size( '2x1-medium', 600, 300, true );
 	add_image_size( '2x1-large', 1200, 600, true );

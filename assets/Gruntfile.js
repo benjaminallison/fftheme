@@ -62,34 +62,28 @@ module.exports = function(grunt) {
 			}
 		},
 
-		compass: {
+		sass: {
 			dist: {
 				options: {
-					sassDir: 'css/source',
-					cssDir: 'css/build',
-					imagesDir: 'images',
-					images: 'images',
-					javascriptsDir: 'js/build',
-					fontsDir: 'fonts',
-					environment: 'production',
-					outputStyle: 'expanded',
-					relativeAssets: true,
-					noLineComments: true,
-					force: true
+					style: 'compact',
+					compass: true
+				},
+				files: {
+					'css/source/global.scss', 'css/build/global-<%= conf.get('themeDir') %>.css'
 				}
-			}
+			},
 		},
 
 		// watch our project for changes
 		watch: {
-			compass: {
+			css: {
 				files: [
 					'css/source/*',
 					'css/source/**/*',
 					'css/vendor/*',
 					'css/vendor/**/*'
 				],
-				tasks: ['compass'],
+				tasks: ['sass'],
 				options: {
 					livereload: 35729
 				}
@@ -130,7 +124,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bower-task');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-imagemin');
 
@@ -138,7 +132,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		// "bower", // can't run until ignoreDependencies is official in Bower
 		'jshint',
-		'compass',
+		'sass',
 		'uglify',
 		'watch',
 		// 'imagemin'

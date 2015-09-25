@@ -53,8 +53,8 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'WP Ultimate CSV Importer',
-				'slug'	=> 'wp-ultimate-csv-importer',
+				'name'	=> 'Really Simple CSV Importer',
+				'slug'	=> 'really-simple-csv-importer',
 				'required'	=> true
 			),
 			array(
