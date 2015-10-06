@@ -1,6 +1,6 @@
 <footer id="footer" class="page_footer">
 	<div class="container">
-		<nav class="col-half gutter-pad footer_nav">
+		<nav class="col_6 gutter_pad footer_nav">
 			<h4>Find your way</h4>
 			<?php $footerMenuParams = array( 'theme_location' => 'footer-menu', 'container' => false, 'items_wrap' => '%3$s' ) ; ?>
 			<ul id="page_footer_menu" class="page_footer_menu menu">

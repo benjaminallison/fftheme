@@ -1,4 +1,4 @@
-<aside id="sidebar-left" class="sidebar col-1-4 gutter-pad" role="complementary">
+<aside id="sidebar_left" class="sidebar sidebar_left col_3 gutter_pad" role="complementary">
 		<?php
 			// dynamic_sidebar( 'sidebar-left' );
 		?>
@@ -11,8 +11,8 @@
 				'title_li' => ''
 			);
 		?>
-		<h4 class="sidebar-nav-title"><a href="<?php echo get_the_permalink( topLevelParent() );?>"><?php echo get_the_title(topLevelParent());?></a></h4>
-		<ul id="main-menu" class="sidebar-menu menu">
+		<h4 class="sidebar_nav_title"><a href="<?php echo get_the_permalink( topLevelParent() );?>"><?php echo get_the_title(topLevelParent());?></a></h4>
+		<ul id="main_menu" class="sidebar_menu menu">
 			<?php wp_list_pages($sbArgs); ?>
  		</ul>
 </aside><!-- #sidebar-left -->

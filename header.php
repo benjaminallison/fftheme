@@ -18,5 +18,5 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_ID(); ?> <?php body_class(); ?>>
-		<div id="page" class="page-wrap">
+		<div id="page" class="page_wrap">
 			<?php get_template_part("partials/header", "content"); ?>

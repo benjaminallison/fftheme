@@ -2,11 +2,11 @@
 	<main id="main">
 		<?php get_template_part("partials/content", "hero");?>
 		<?php get_sidebar("left"); ?>
-		<article id="content" class="col-half error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'ffcc' ); ?></h1>
+		<article id="content" class="col-half error_404 not_found">
+			<header class="page_header">
+				<h1 class="page_title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'ffcc' ); ?></h1>
 			</header>
-			<div class="page-content">
+			<div class="page_content">
 				<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'ffcc' ); ?></p>
 				<?php get_search_form(); ?>
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
@@ -32,7 +32,7 @@
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 				?>
 				<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-			</div><!-- .page-content -->
+			</div><!-- .page_content -->
 		</article>
 		<?php get_sidebar("right"); ?>
 	</main><!-- #main -->

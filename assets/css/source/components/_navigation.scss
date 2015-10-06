@@ -1,4 +1,4 @@
-.main-menu {
+.main_menu {
 	@include clearfix;
 	list-style: none;
 	padding: 0;
@@ -6,7 +6,7 @@
 		display: inline-block;
 		font-size: 16px; // this overrides the font-size 0 from the equisdistant placement
 		position: relative;
-		&:hover .sub-menu {
+		&:hover .sub_menu {
 			display: block;
 		}
 		> a {
@@ -31,8 +31,8 @@
 		}
 	}
 }
-.left-menu {
-	.sub-menu {
+.left_menu {
+	.sub_menu {
 		margin: 0 0 0 -7.5em;
 	}
 	> li {
@@ -42,8 +42,8 @@
 	}
 }
 
-.right-menu {
-	.sub-menu {
+.right_menu {
+	.sub_menu {
 		margin: 0 0 0 -6.25em;
 	}
 	> li {
@@ -53,7 +53,7 @@
 	}
 }
 
-.sub-menu {
+.sub_menu {
 	background: rgba(#000, 0.85);
 	display: block;
 	left: 50%;
@@ -78,7 +78,7 @@
 	}
 }
 
-.nav-toggle {
+.nav_toggle {
 	display: none;
 	height: 3em;
 	outline: none;
@@ -94,16 +94,16 @@
 	}
 	&.open {
 		background: #0f0;
-		.toggle-icon-line {
-			&.top-line {
+		.toggle_icon_line {
+			&.top_line {
 				top: 12px;
 				@include transform(rotate(45deg));
 			}
-			&.mid-line {
+			&.mid_line {
 				left: 50%;
 				width: 1px;
 			}
-			&.bot-line {
+			&.bot_line {
 				top: 12px;
 				@include transform(rotate(-45deg));
 			}
@@ -111,7 +111,7 @@
 	}
 }
 
-.toggle-icon {
+.toggle_icon {
 	left: 21px;
 	height: 30px;
 	position: absolute;
@@ -119,7 +119,7 @@
 	top: 9px;
 }
 
-.toggle-icon-line {
+.toggle_icon_line {
 	background: #f00;
 	display: block;
 	width: 30px;
@@ -127,14 +127,14 @@
 	position: absolute;
 	left: 0;
 	@include transition(all 200ms ease-in-out);
-	&.top-line {
+	&.top_line {
 		top: 3px;
 		@include transform(rotate(0));
 	}
-	&.mid-line {
+	&.mid_line {
 		top: 12px;
 	}
-	&.bot-line {
+	&.bot_line {
 		top: 21px;
 		@include transform(rotate(0));
 	}
@@ -155,7 +155,7 @@
 		z-index: 1;
 		-webkit-overflow-scrolling: touch;
 	}
-	.mobile-nav {
+	.mobile_nav {
 		background: darken(#f00, 20%);
 		bottom: 0;
 		display: block;
@@ -174,7 +174,7 @@
 		}
 	}
 
-	.nav-toggle {
+	.nav_toggle {
 		display: block;
 	}
 }

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<main id="main">
 		<?php get_template_part("partials/content", "hero");?>
-		<div class="page-wrap container">
+		<div class="page_wrap container">
 			<?php get_sidebar("left"); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'partials/content', 'single' ); ?>

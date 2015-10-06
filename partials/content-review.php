@@ -29,7 +29,7 @@
 ?>
 <h3>Jump to vintage</h3>
 
-<ul class="col-center sub-menu menu tag-list">
+<ul class="col_center sub_menu menu tag_list">
 	<?php foreach ($vintageList as $key => $val) { ?>
 		<li><a href="#<?php echo $key;?>"><?php echo $vintageList[$key];?></a></li>
 	<?php } ?>

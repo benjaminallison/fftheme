@@ -1,23 +1,23 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class("col-half gutter-pad"); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class("col_6 gutter_pad"); ?>>
+	<header class="entry_header">
+		<?php the_title( '<h1 class="entry_title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
+		<div class="entry_meta">
 			<?php ffcc_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		</div><!-- .entry_meta -->
+	</header><!-- .entry_header -->
 
-	<div class="entry-content">
+	<div class="entry_content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'ffcc' ),
+				'before' => '<div class="page_links">' . __( 'Pages:', 'ffcc' ),
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div><!-- .entry_content -->
 
-	<footer class="entry-footer">
+	<footer class="entry_footer">
 		<?php ffcc_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer><!-- .entry_footer -->
 </article><!-- #post-## -->

@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 	<main id="main">
 		<?php get_template_part("partials/content", "hero");?>
-		<div class="page-wrap container">
+		<div class="page_wrap container">
 			<?php get_sidebar("left"); ?>
-			<article id="content" class="col-half gutter-pad">
+			<article id="content" class="col_6 gutter_pad">
 				<?php if ( have_posts() ) : ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'partials/content', get_post_format() ); ?>
