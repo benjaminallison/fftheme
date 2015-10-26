@@ -69,7 +69,7 @@ module.exports = function(grunt) {
 					compass: true
 				},
 				files: {
-					'css/source/global.scss', 'css/build/global-<%= conf.get('themeDir') %>.css'
+					'css/build/global-<%= conf.get('themeDir') %>.css': 'css/source/global.scss'
 				}
 			},
 		},

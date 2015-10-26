@@ -22,6 +22,11 @@
 				'required'	=> true
 			),
 			array(
+				'name'	=> 'Duplicate Posts',
+				'slug'	=> 'duplicate-post',
+				'required'	=> true
+			),
+			array(
 				'name'	=> 'Manual Image Crop',
 				'slug'	=> 'manual-image-crop',
 				'required'	=> true
