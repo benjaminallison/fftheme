@@ -29,19 +29,20 @@
 	}
 
 	function topLevelParent() {
-		$cptOverride = array();
-
 		global $post;
-		$postToQuery = $post->ID;
-		foreach ($cptOverride as $key => $id) {
-			if ( $key == $post->post_type ) {
-				$postToQuery = $id;
+		if ($post):
+			$cptOverride = array();
+			$postToQuery = $post->ID;
+			foreach ($cptOverride as $key => $id) {
+				if ( $key == $post->post_type ) {
+					$postToQuery = $id;
+				}
 			}
-		}
-		$ancestors = get_post_ancestors($postToQuery);
-		$topLevelParent = array_pop($ancestors);
-		if ( empty($topLevelParent) ) {
-			$topLevelParent = $postToQuery;
-		}
-		return $topLevelParent;
+			$ancestors = get_post_ancestors($postToQuery);
+			$topLevelParent = array_pop($ancestors);
+			if ( empty($topLevelParent) ) {
+				$topLevelParent = $postToQuery;
+			}
+			return $topLevelParent;
+		endif;
 	}

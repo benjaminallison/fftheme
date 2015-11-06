@@ -9,6 +9,7 @@ function custom_menu_order($menu_ord) {
 		'edit.php', // Posts
 		'upload.php', // Media
 		'edit.php?post_type=feature', // Custom type one
+		'edit.php?post_type=ff_rse_event', // Custom type one
 		'edit.php?post_type=wine', // Custom type one
 		'edit.php?post_type=review', // Custom type one
 		'edit.php?post_type=event', // Custom type one
