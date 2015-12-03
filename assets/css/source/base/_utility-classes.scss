@@ -17,6 +17,7 @@
 }
 
 .bg_cover {
+	background-position: center center!important;
 	background-size: cover!important;
 }
 
@@ -49,11 +50,6 @@
 	@extend .centred;
 	display: inline-block;
 	text-align: center;
-}
-
-.bg_cover {
-	background-position: center center!important;
-	background-size: cover!important;
 }
 
 @media screen and (max-width: 640px) {

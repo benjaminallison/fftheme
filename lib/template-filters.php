@@ -31,13 +31,6 @@
 	}
 	add_action( 'wp_head', 'render_my_wp_title' );
 
-	function body_ID() {
-		global $post;
-		if ( $post ) {
-			return 'id="'.$post->post_name.'"';
-		}
-	} 
-
 	function body_classes( $classes ) {
 		global $post;
 		if ( $post ) {

@@ -2,7 +2,7 @@
 	<main id="main">
 		<?php get_template_part("partials/content", "hero");?>
 		<?php get_sidebar("left"); ?>
-		<article id="content" class="col-half error_404 not_found">
+		<article id="content" class="col_6 error_404 not_found">
 			<header class="page_header">
 				<h1 class="page_title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'ffcc' ); ?></h1>
 			</header>

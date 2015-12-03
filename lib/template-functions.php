@@ -1,4 +1,48 @@
 <?php
+
+	function theme_dir() {
+		return get_template_directory_uri();
+	}
+
+	function assets_dir() {
+		return get_template_directory_uri() . "/assets";
+	}
+
+	function assets_path() {
+		return TEMPLATEPATH . "/assets";
+	}
+
+	function images_dir() {
+		return get_template_directory_uri() . "/assets/images";
+	}
+
+	function images_path() {
+		return TEMPLATEPATH . "/assets/images";
+	}
+
+	function svg_icons_dir() {
+		return get_template_directory_uri() . "/assets/svg-icons";
+	}
+
+	function svg_icons_path() {
+		return TEMPLATEPATH . "/assets/svg-icons";
+	}
+
+	function font_awesome_dir() {
+		return get_template_directory_uri() . "/assets/svg-icons/font-awesome";
+	}
+
+	function font_awesome_path() {
+		return TEMPLATEPATH . "/assets/svg-icons/font-awesome";
+	}
+
+	function body_ID() {
+		global $post;
+		if ( $post ) {
+			return 'id="'.$post->post_name.'"';
+		}
+	}
+
 	function hasChildren($id = null) {
 		global $post;
 		if ($id == null ) {

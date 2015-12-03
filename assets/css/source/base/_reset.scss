@@ -125,6 +125,10 @@ mark {
 	font-weight: bold;
 }
 
+path {
+	@include transition(fill 0.25s);
+}
+
 pre, code, kbd, samp {
 	font-family: Inconsolata, Menlo, Courier, monospace, sans-serif;
 	text-align: left;

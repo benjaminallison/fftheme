@@ -7,6 +7,16 @@
 
 		$plugins = array(
 			array(
+				'name'	=> 'Clef',
+				'slug'	=> 'wpclef',
+				'required'	=> true
+			),
+			array(
+				'name'	=> 'Custom Post Type UI',
+				'slug'	=> 'custom-post-type-ui',
+				'required'	=> true
+			),
+			array(
 				'name'	=> 'W3 Total Cache',
 				'slug'	=> 'w3-total-cache',
 				'required'	=> true

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<main id="main">
 		<?php get_template_part("partials/content", "hero");?>
-		<div class="page_wrap container">
+		<div class="content_wrap container">
 			<?php get_sidebar("left"); ?>
 			<article id="content" class="col_6 gutter_pad">
 				<?php if ( have_posts() ) : ?>
