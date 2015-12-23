@@ -48,7 +48,7 @@ abbr[title], dfn[title] {
 	cursor: help;
 }
 
-article, aside, details, div, figcaption, figure, footer, header, hgroup, main, mark, menu, nav, section, summary, time {
+article, aside, details, div, figcaption, figure, footer, header, hgroup, main, mark, menu, nav, section, summary {
 	display: block;
 }
 
@@ -59,7 +59,7 @@ blockquote, q {
 	}
 }
 
-button, input, select, textarea {
+button, input[type="text"], input[type="email"], input[type="phone"], input[type="password"], select, textarea {
 	border: none;
 	@include border-radius(0);
 	display: block;
