@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 						// 'js/vendor/waitForImages/dist/jquery.waitforimages.min.js'
 					],
 					'js/build/script.min.js': [
-						'js/source/init.js'
+						'js/source/init.js',
 						'js/source/nav.js'
 					]
 				}
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 					compass: true
 				},
 				files: {
-					'css/build/global-<%= conf.get('themeDir') %>.css': 'css/source/global.scss'
+					'css/build/global.css': 'css/source/global.scss'
 				}
 			},
 		},

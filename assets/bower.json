@@ -1,5 +1,5 @@
 {
-	"name": "<%= conf.get('themeDir') %>",
+	"name": "firefly",
 	"version": "1.0",
 	"dependencies": {
 		"html5shiv": "*",
