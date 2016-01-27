@@ -52,11 +52,10 @@
 	add_image_size( '16x9-small', 150, 84, true );
 	add_image_size( '16x9-medium', 600, 336, true );
 	add_image_size( '16x9-large', 1200, 675, true );
-	add_image_size( '16x9-large', 1200, 675, true );
 	add_image_size( '16x9-massive', 1600, 900, true );
 	add_image_size( '4x3-small', 150, 112, true );
 	add_image_size( '4x3-medium', 600, 450, true );
-	add_image_size( '4x3-large', 1200, 675, true );
+	add_image_size( '4x3-large', 1200, 900, true );
 	add_image_size( '4x3-massive', 1600, 1200, true );
 	add_image_size( '3x2-small', 150, 100, true );
 	add_image_size( '3x2-medium', 600, 400, true );
