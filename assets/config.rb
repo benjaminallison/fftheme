@@ -3,10 +3,10 @@ require 'compass/import-once/activate'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "/wp-content/themes/<%= conf.get('themeDir') %>/assets/css/build"
-sass_dir = "/wp-content/themes/<%= conf.get('themeDir') %>/assets/css/source"
-images_dir = "/wp-content/themes/<%= conf.get('themeDir') %>/assets/images"
-javascripts_dir = "/wp-content/themes/<%= conf.get('themeDir') %>/assets/js"
+css_dir = "css/build"
+sass_dir = "css/source"
+images_dir = "images"
+javascripts_dir = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
