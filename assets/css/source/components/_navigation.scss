@@ -165,7 +165,7 @@
 		padding: 0 1em;
 		position: fixed;
 		top: 5em;
-		@include transition(all 0.5s, cubic-bezier(.09,.82,.74,1));
+		@include transition(all 0.5s, cubic-bezier(0.09,0.82,0.74,1) 0s);
 		width: 100%;
 		z-index: 1;
 		-webkit-overflow-scrolling: touch;
