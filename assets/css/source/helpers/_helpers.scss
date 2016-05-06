@@ -21,3 +21,33 @@
 	padding-#{$opposite}: 1em;
 	text-align: $opposite;
 }
+
+@mixin animation($animation, $duration, $easing, $iteration, $delay) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+	-webkit-animation-timing-function: $easing;
+	-webkit-animation-iteration-count: $iteration;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+	-moz-animation-timing-function: $easing;
+	-moz-animation-iteration-count: $iteration;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+	animation-timing-function: $easing;
+	animation-iteration-count: $iteration;
+}
+
+@mixin input-placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}  
+}
