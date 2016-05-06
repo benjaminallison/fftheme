@@ -66,15 +66,14 @@ module.exports = function(grunt) {
 		},
 
 		sass: {
+			options: {
+				sourceMap: true
+			},
 			dist: {
-				options: {
-					style: 'compact',
-					compass: true
-				},
 				files: {
 					'css/build/global.css': 'css/source/global.scss'
 				}
-			},
+			}
 		},
 
 		// watch our project for changes
@@ -127,7 +126,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bower-task');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-imagemin');
 
