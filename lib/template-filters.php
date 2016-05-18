@@ -97,3 +97,5 @@
 		return $classes;
 	}
 	add_filter( 'nav_menu_css_class', 'add_current_class_to_posts_page', 10, 2 );
+
+	add_filter( 'jpeg_quality', create_function( '', 'return 60;' ) );
