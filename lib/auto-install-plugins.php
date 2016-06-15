@@ -7,11 +7,6 @@
 
 		$plugins = array(
 			array(
-				'name'	=> 'Clef',
-				'slug'	=> 'wpclef',
-				'required'	=> true
-			),
-			array(
 				'name'	=> 'Custom Post Type UI',
 				'slug'	=> 'custom-post-type-ui',
 				'required'	=> true
@@ -27,18 +22,8 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'Duplicator',
-				'slug'	=> 'duplicator',
-				'required'	=> true
-			),
-			array(
 				'name'	=> 'Duplicate Posts',
 				'slug'	=> 'duplicate-post',
-				'required'	=> true
-			),
-			array(
-				'name'	=> 'Manual Image Crop',
-				'slug'	=> 'manual-image-crop',
 				'required'	=> true
 			),
 			array(
@@ -58,11 +43,6 @@
 				'force_activation'	=> true
 			),
 			array(
-				'name'	=> 'Theme Check',
-				'slug'	=> 'theme-check',
-				'required'	=> true
-			),
-			array(
 				'name'	=> 'Wordpress Importer',
 				'slug'	=> 'wordpress-importer',
 				'required'	=> true
@@ -73,18 +53,8 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'Contact Form 7',
-				'slug'	=> 'contact-form-7',
-				'required'	=> true
-			),
-			array(
 				'name'	=> 'Google Analyticator',
 				'slug'	=> 'google-analyticator',
-				'required'	=> true
-			),
-			array(
-				'name'	=> 'Mailchimp for WP',
-				'slug'	=> 'mailchimp-for-wp',
 				'required'	=> true
 			),
 			array(
@@ -95,16 +65,6 @@
 			array(
 				'name'	=> 'Simple 301 Redirects',
 				'slug'	=> 'simple-301-redirects',
-				'required'	=> true
-			),
-			array(
-				'name'	=> 'Mailchimp for WP',
-				'slug'	=> 'mailchimp-for-wp',
-				'required'	=> true
-			),
-			array(
-				'name'		=> 'WordPress Backup to Dropbox',
-				'slug'		=> 'wordpress-backup-to-dropbox',
 				'required'	=> true
 			),
 			array(
@@ -120,21 +80,21 @@
 				'required'	=> true
 			),
 			array(
-				'name'		=> 'Firefly Trade and Media',
-				'slug'		=> 'firefly-trade-media',
-				'source'	=> get_stylesheet_directory() . '/lib/vendor/firefly-trade-media.zip',
-				'required'	=> true
-			),
-			array(
-				'name'		=> 'Advanced Custom Post Order',
-				'slug'		=> 'advanced-post-types-order',
-				'source'	=> get_stylesheet_directory() . '/lib/vendor/advanced-post-types-order.zip',
-				'required'	=> true
-			),
-			array(
 				'name'		=> 'Video User Manuals',
 				'slug'		=> 'video-user-manuals',
-				'source'	=> get_stylesheet_directory() . '/lib/vendor/video-user-manuals.zip',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/video-user-manuals-2.4.1.zip',
+				'required'	=> true
+			),
+			array(
+				'name'		=> 'Advanced Custom Fields',
+				'slug'		=> 'advanced-custom-fields',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/advanced-custom-fields-pro-5.3.7.zip',
+				'required'	=> true
+			),
+			array(
+				'name'		=> 'Gravity Forms',
+				'slug'		=> 'gravity-forms',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/gravityforms_1.9.17.10.zip',
 				'required'	=> true
 			)
 		);
