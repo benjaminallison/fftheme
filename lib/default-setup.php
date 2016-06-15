@@ -1,6 +1,6 @@
 <?php
 	if (isset($_GET['activated']) && is_admin()){
-		include( dirname(__FILE__) .'/default-pages.php');
+		// include( dirname(__FILE__) .'/default-pages.php');
 		// SET DEFAULT OPTIONS
 		update_option( 'avatar_default', 'retro' );
 		update_option( 'avatar_rating', 'X' );
