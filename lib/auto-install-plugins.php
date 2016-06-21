@@ -96,6 +96,12 @@
 				'slug'		=> 'gravity-forms',
 				'source'	=> get_stylesheet_directory() . '/lib/vendor/gravityforms_1.9.17.10.zip',
 				'required'	=> true
+			),
+			array(
+				'name'		=> 'FFCC Theme Options',
+				'slug'		=> 'ffcc-theme-options',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/ffcc-admin-options.zip',
+				'required'	=> true
 			)
 		);
 	
