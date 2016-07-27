@@ -102,6 +102,11 @@
 				'slug'		=> 'ffcc-theme-options',
 				'source'	=> get_stylesheet_directory() . '/lib/vendor/ffcc-admin-options.zip',
 				'required'	=> true
+			),
+			array(
+				'name'		=> 'Media Search Enhanced',
+				'slug'		=> 'media-search-enhanced',
+				'required'	=> true
 			)
 		);
 	
