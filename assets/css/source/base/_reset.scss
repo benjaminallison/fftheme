@@ -69,7 +69,7 @@ button, input[type="text"], input[type="email"], input[type="phone"], input[type
 	width: auto;
 }
 
-button, label, input[type=button], input[type=submit], input[type=file] {
+button, input[type="text"], input[type="email"], input[type="phone"], input[type="password"], input[type="search"], select, textarea {
 	cursor: pointer;
 	-webkit-appearance: none;
 }

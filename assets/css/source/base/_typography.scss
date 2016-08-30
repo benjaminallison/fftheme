@@ -61,6 +61,10 @@ img {
 
 input, textarea {
 	@include transition(all 0.375s);
+	@include input-placeholder {
+		color: #666;
+		font-style: italic;
+	}
 }
 
 button {
