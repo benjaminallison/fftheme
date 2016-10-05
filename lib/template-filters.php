@@ -58,15 +58,6 @@
 	}
 	add_filter( 'body_class', 'body_classes' );
 
-	// modifies the main WordPress query to include an array of 
-	function cpt_search( $query ) {
-		if ( $query->is_search ) {
-			$query->set( 'post_type', array( 'post', 'page', 'event' ) );
-		}
-		return $query;
-	}
-	add_filter( 'pre_get_posts', 'cpt_search' );
-
 	function specify_current_page( $sorted_menu_items, $args ) {
 		if ( isset( $args->current) ) {
 			foreach($sorted_menu_items as $key => $val) {
