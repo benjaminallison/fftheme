@@ -90,3 +90,25 @@
 			return $topLevelParent;
 		endif;
 	}
+
+	function get_nested_terms($args) {
+		$terms = get_terms($args);
+		$nestedTerms = array();
+		foreach ($terms as $term) :
+			if ($term->parent === 0) {
+				$nestedTerms[] = $term;
+			} else {
+				// if parent, the parent would already have been added to the new array
+				// since it would have come before any children
+				foreach ($nestedTerms as $nestedTerm) :
+					if ($nestedTerm->term_id === $term->parent) {
+						if (!$nestedTerm->children) {
+							$nestedTerm->children = array();
+						}
+						$nestedTerm->children[] = $term;
+					}
+				endforeach;
+			}
+		endforeach;
+		return $nestedTerms;
+	}

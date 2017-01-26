@@ -41,6 +41,9 @@ module.exports = function(grunt) {
 		},
 		// concatenation and minification all in one
 		uglify: {
+			options: {
+				sourceMap: true
+			},
 			dist: {
 				files: {
 					'js/build/vendor.min.js': [

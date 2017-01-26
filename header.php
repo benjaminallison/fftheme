@@ -2,7 +2,6 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta name="author" content="Designed and coded by Firefly Creative Company: http://fireflycompany.com">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="<?php echo home_url(); ?>/favicon.png">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

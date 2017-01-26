@@ -14,7 +14,7 @@
 
 <?php
 	if ( has_post_thumbnail() ){
-		$postID = $post->ID;
+		$postID = get_queried_object_id();
 	} else if ( $post->post_parent && has_post_thumbnail($post->post_parent) ) {
 		$postID = $post->post_parent;
 	} else if ( getGrandparent() && has_post_thumbnail( getGrandparent() ) ) {
