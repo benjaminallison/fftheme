@@ -14,7 +14,6 @@
 	include(dirname(__FILE__) . '/lib/auto-install-plugins.php');
 	include(dirname(__FILE__) . '/lib/admin-menu.php');
 	include(dirname(__FILE__) . '/lib/admin-tinymce.php');
-	include(dirname(__FILE__) . '/lib/admin-columns.php');
 
 	// include(dirname(__FILE__) . '/lib/images-rotate-on-upload.php');
 	// include(dirname(__FILE__) . '/lib/admin-options.php');
