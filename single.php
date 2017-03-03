@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<main id="main">
+	<main id="main" class="page_content">
 		<?php get_template_part("partials/content", "hero");?>
 		<div class="content_wrap container">
 			<?php get_sidebar("left"); ?>
