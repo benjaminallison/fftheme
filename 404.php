@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-	<main id="main">
+	<main id="main" class="page_content">
 		<?php get_template_part("partials/content", "hero");?>
 		<?php get_sidebar("left"); ?>
 		<article id="content" class="col_6 error_404 not_found">
-			<header class="page_header">
-				<h1 class="page_title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'ffcc' ); ?></h1>
+			<header class="entry_header">
+				<h1 class="entry_title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'ffcc' ); ?></h1>
 			</header>
-			<div class="page_content">
+			<div class="entry_content">
 				<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'ffcc' ); ?></p>
 				<?php get_search_form(); ?>
 				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>

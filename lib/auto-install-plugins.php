@@ -37,8 +37,8 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'Simple Page Ordering',
-				'slug'	=> 'simple-page-ordering',
+				'name'	=> 'Simple Custom Post Order',
+				'slug'	=> 'simple-custom-post-order',
 				'required'	=> true,
 				'force_activation'	=> true
 			),

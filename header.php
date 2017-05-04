@@ -8,7 +8,12 @@
 		<!--[if lt IE 9]>
 			<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/html5shiv.min.js"></script>
 		<![endif]-->
-	
+		<script>
+			window.homeURL = "<?php echo home_url();?>";
+			window.themeURL = "<?php echo get_template_directory_uri();?>";
+			window.nonce = "<?php echo wp_create_nonce( 'work-nonce' ); ?>";
+			window.ajaxurl = "<?php echo admin_url( 'admin-ajax.php' );?>";
+		</script>
 		<!-- 
 			<script type="text/javascript" src="http://use.typekit.com/mpe4ylu.js"></script>
 			<script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
