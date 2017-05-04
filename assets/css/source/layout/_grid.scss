@@ -30,7 +30,7 @@
 
 .col_12 {
 	@extend %column;
-	width: 100%
+	width: 100%;
 }
 
 .col_11 {
@@ -40,17 +40,17 @@
 
 .col_10 {
 	@extend %column;
-	width: 83.333%
+	width: 83.333%;
 }
 
 .col_9 {
 	@extend %column;
-	width: 75%
+	width: 75%;
 }
 
 .col_8 {
 	@extend %column;
-	width: 66.666%
+	width: 66.666%;
 }
 
 .col_7 {
@@ -59,7 +59,7 @@
 }
 .col_6 {
 	@extend %column;
-	width: 50%
+	width: 50%;
 }
 
 .col_5 {
@@ -69,17 +69,17 @@
 
 .col_4 {
 	@extend %column;
-	width: 33.333%
+	width: 33.333%;
 }
 
 .col_3 {
 	@extend %column;
-	width: 25%
+	width: 25%;
 }
 
 .col_2 {
 	@extend %column;
-	width: 16.667%
+	width: 16.667%;
 }
 
 .col_1 {
@@ -128,7 +128,7 @@
 	
 	&.two_by_one {
 		padding-top: 50%;
-	}
+	};
 }
 
 .proportional_inner {

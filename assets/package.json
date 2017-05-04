@@ -1,14 +1,14 @@
 {
-	"name": "firefly",
+	"name": "FFCC Starter Theme",
 	"version": "1.0.0",
-	"description": "Custom WordPress theme by Firefly Creative Company",
+	"description": "Custom WordPress theme ",
 	"main": "Gruntfile.js",
 	"dependencies": {
-		"grunt": "~0.4.5",
+		"grunt": "~1.0.1",
 		"grunt-bower-task": "~0.4.0",
-		"grunt-sass": "~1.1.0",
-		"grunt-contrib-jshint": "~0.12.0",
-		"grunt-contrib-uglify": "~0.11.0",
-		"grunt-contrib-watch": "~0.6.1"
+		"grunt-sass": "~2.0.0",
+		"grunt-contrib-jshint": "~0.1.1",
+		"grunt-contrib-uglify": "~2.3.0",
+		"grunt-contrib-watch": "~1.0.0"
 	}
 }
