@@ -20,9 +20,9 @@ jQuery(document).ready(function($) {
 	//function windowResizeBehaviour() {
 	//}
 
-	// if ( $("body").hasClass("desktop-device") ) {
-	// 	$(".parallax").simpleParallax(0.5, $.mobileBreakPoint);
-	// }
+	//if ( $("body").hasClass("desktop-device") ) {
+	//	$(".parallax").simpleParallax(0.5, $.mobileBreakPoint);
+	//}
 
 	$(window).smartresize(function(){
 		getViewportDimensions();

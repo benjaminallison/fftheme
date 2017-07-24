@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 				files: {
 					'js/build/vendor.min.js': [
 						'js/vendor/jquery.smart-resize.js',
-						'js/vendor/jquery.ffcc-mobile-nav.js',
+						'js/vendor/jquery.ffcc-mobile-nav.js'
 						//'js/vendor/jquery.shrink-text.js',
 						//'js/vendor/jquery.simple-parallax.js',
 						//'js/vendor/gsap/src/minified/TweenMax.min.js',
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 					livereload: 35729
 				}
 			}
-		},
+		}
 		//imagemin: {                          // Task
 		//	dynamic: {
 		//		options: {                       // Target options
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
 		'jshint',
 		'sass',
 		'uglify',
-		'watch',
+		'watch'
 		// 'imagemin'
 	]);
 

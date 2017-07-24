@@ -86,8 +86,8 @@
 				'required'	=> true
 			),
 			array(
-				'name'		=> 'Advanced Custom Fields',
-				'slug'		=> 'advanced-custom-fields',
+				'name'		=> 'Advanced Custom Fields Pro',
+				'slug'		=> 'advanced-custom-fields-pro',
 				'source'	=> get_stylesheet_directory() . '/lib/vendor/advanced-custom-fields-pro-5.3.7.zip',
 				'required'	=> true
 			),

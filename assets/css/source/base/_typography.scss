@@ -44,10 +44,16 @@ p, ol, ul {
 }
 
 a {
-	@include transition(color 0.25s, opacity 0.25s);
+	@include transition(background 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.25s ease-in-out);
 	text-decoration: none;
+	&:visited {
+	}
 	&:hover {
 	}
+}
+
+button {
+	@include transition(all 0.3s ease-in-out);
 }
 
 hr {
@@ -56,17 +62,17 @@ hr {
 
 img {
 	height: auto;
-	@include transition(opacity 0.25s);
+	@include transition(opacity 0.3s ease-in-out);
 }
 
 input, textarea {
-	@include transition(all 0.375s);
+	@include transition(all 0.3s ease-in-out);
 	@include input-placeholder {
 		color: #666;
 		font-style: italic;
 	}
 }
 
-button {
-	@include transition(all 0.375s);
+svg {
+	@include transition(all 0.3s ease-in-out);
 }

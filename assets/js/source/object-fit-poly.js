@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 					.css('backgroundImage', 'url(' + imgUrl + ')')
 					.addClass('compat-object-fit');
 				$container.find('.img_to_fit').remove();
-			}  
+			}
 		});
 	}
 	var vhFallback = function() {
