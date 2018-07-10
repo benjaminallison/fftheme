@@ -3,27 +3,27 @@
 		if ( is_feed() ) {
 			return $title;
 		}
-	
+
 		global $page, $paged;
-	
+
 		// Add the blog name
 		$title .= get_bloginfo( 'name', 'display' );
-	
+
 		// Add the blog description for the home/front page.
 		$site_description = get_bloginfo( 'description', 'display' );
 		if ( $site_description && ( is_home() || is_front_page() ) ) {
 			$title .= " $sep $site_description";
 		}
-	
+
 		// Add a page number if necessary:
 		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
 			$title .= " $sep " . sprintf( __( 'Page %s', 'adsdf' ), max( $paged, $page ) );
 		}
-	
+
 		return $title;
 	}
 	add_filter( 'wp_title', 'my_wp_title', 10, 2 );
-	
+
 	function render_my_wp_title() {
 		?>
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -75,18 +75,18 @@
 
 	function add_current_class_to_posts_page( $classes, $item ) {
 		static $posts_page;
-	
+
 		if ( ! is_single() )
 			return $classes;
-	
+
 		if ( ! isset( $posts_page ) )
 			$posts_page = get_option( 'page_for_posts' ); // cache as we may be calling this a lot!
-	
+
 		if ( $item->object == 'page' && $item->object_id == $posts_page )
 			$classes[] = 'current_page_item'; // this is the posts page!
-	
+
 		return $classes;
 	}
 	add_filter( 'nav_menu_css_class', 'add_current_class_to_posts_page', 10, 2 );
 
-	add_filter( 'jpeg_quality', create_function( '', 'return 60;' ) );
+	add_filter( 'jpeg_quality', function($quality) { return 60; } );
