@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require(dirname(__FILE__) .'/vendor/class-tgm-plugin-activation.php');
 
 	add_action( 'tgmpa_register', 'my_theme_register_required_plugins');
@@ -12,11 +12,6 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'W3 Total Cache',
-				'slug'	=> 'w3-total-cache',
-				'required'	=> true
-			),
-			array(
 				'name'	=> 'Yoast',
 				'slug'	=> 'wordpress-seo',
 				'required'	=> true
@@ -27,8 +22,8 @@
 				'required'	=> true
 			),
 			array(
-				'name'	=> 'iThemes Security',
-				'slug'	=> 'better-wp-security',
+				'name'	=> 'Wordfence',
+				'slug'	=> 'wordfence',
 				'required'	=> true
 			),
 			array(
@@ -80,15 +75,14 @@
 				'required'	=> true
 			),
 			array(
-				'name'		=> 'Video User Manuals',
-				'slug'		=> 'video-user-manuals',
-				'source'	=> get_stylesheet_directory() . '/lib/vendor/video-user-manuals-2.4.1.zip',
+				'name'	=> 'WP101',
+				'slug'	=> 'wp101',
 				'required'	=> true
 			),
 			array(
 				'name'		=> 'Advanced Custom Fields Pro',
 				'slug'		=> 'advanced-custom-fields-pro',
-				'source'	=> get_stylesheet_directory() . '/lib/vendor/advanced-custom-fields-pro-5.3.7.zip',
+				'source'	=> get_stylesheet_directory() . '/lib/vendor/advanced-custom-fields-pro-5.7.6.zip',
 				'required'	=> true
 			),
 			array(
@@ -109,7 +103,7 @@
 				'required'	=> true
 			)
 		);
-	
+
 		$config = array(
 			'default_path' => '',                      // Default absolute path to pre-packaged plugins.
 			'menu'         => 'tgmpa-install-plugins', // Menu slug.
@@ -143,7 +137,7 @@
 	}
 
 
-	
+
 	// This is an example of how to include a plugin pre-packaged with a theme.
 	// array(
 	// 	'name'               => 'TGM Example Plugin', // The plugin name.
@@ -155,7 +149,7 @@
 	// 	'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 	// 	'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 	// ),
-	
+
 	// This is an example of how to include a plugin from a private repo in your theme.
 	// array(
 	// 	'name'               => 'TGM New Media Plugin', // The plugin name.
