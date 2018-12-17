@@ -2,15 +2,6 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-		bower: {
-			install: {
-				options: {
-					targetDir: "js",
-					layout: "byComponent"
-				}
-			}
-		},
-		// let us know if our JS is sound
 		jshint: {
 			options: {
 				"bitwise": true,
@@ -110,24 +101,9 @@ module.exports = function(grunt) {
 				}
 			}
 		}
-		//imagemin: {                          // Task
-		//	dynamic: {
-		//		options: {                       // Target options
-		//			optimizationLevel: 3,
-		//			svgoPlugins: [{ removeViewBox: false }]
-		//		},
-		//		files: [{
-		//			expand: true,                  // Enable dynamic expansion
-		//			cwd: 'src/',                   // Src matches are relative to this path
-		//			src: ['images/*.{png,jpg,gif}'],   // Actual patterns to match
-		//			dest: 'images/compressed/'                  // Destination path prefix
-		//		}]
-		//	}
-		//}
 	});
 
 	// load tasks
-	grunt.loadNpmTasks('grunt-bower-task');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-sass');
@@ -136,7 +112,6 @@ module.exports = function(grunt) {
 
 	// register task
 	grunt.registerTask('default', [
-		// "bower", // can't run until ignoreDependencies is official in Bower
 		'jshint',
 		'sass',
 		'uglify',

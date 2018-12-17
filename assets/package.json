@@ -5,9 +5,9 @@
 	"main": "Gruntfile.js",
 	"dependencies": {
 		"grunt": "~1.0.3",
-		"grunt-sass": "~3.0.1",
+		"grunt-sass": "~2.1.0",
 		"grunt-contrib-jshint": "~2.0.0",
 		"grunt-contrib-uglify": "~4.0.0",
-		"grunt-contrib-watch": "~1.1.0",
+		"grunt-contrib-watch": "~1.1.0"
 	}
 }
