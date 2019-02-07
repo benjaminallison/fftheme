@@ -1,4 +1,5 @@
 'use strict';
+const sass = require('node-sass');
 module.exports = function(grunt) {
 
 	grunt.initConfig({
@@ -62,7 +63,8 @@ module.exports = function(grunt) {
 		sass: {
 			options: {
 				sourceMap: true,
-				outputStyle: "compact"
+				outputStyle: "compact",
+				implementation: sass
 			},
 			dist: {
 				files: {

@@ -4,8 +4,9 @@
 	"description": "Custom WordPress theme by Benjamin Allison",
 	"main": "Gruntfile.js",
 	"dependencies": {
+		"node-sass": "*",
 		"grunt": "~1.0.3",
-		"grunt-sass": "~2.1.0",
+		"grunt-sass": "~3.0.2",
 		"grunt-contrib-jshint": "~2.0.0",
 		"grunt-contrib-uglify": "~4.0.0",
 		"grunt-contrib-watch": "~1.1.0"

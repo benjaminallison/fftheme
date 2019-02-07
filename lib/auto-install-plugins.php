@@ -101,6 +101,11 @@
 				'name'		=> 'Media Search Enhanced',
 				'slug'		=> 'media-search-enhanced',
 				'required'	=> true
+			),
+			array(
+				'name'		=> 'Classic Editor',
+				'slug'		=> 'classic-editor',
+				'required'	=> true
 			)
 		);
 
